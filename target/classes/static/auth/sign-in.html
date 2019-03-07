@@ -42,7 +42,7 @@
 </nav>
 <!-- End Navbar -->
 <div class="page-header">
-    <div class="page-header-image" style="background-image:url(../assets/images/login.jpg);background-size: auto"></div>
+    <div class="page-header-image" style="background-image:url(../assets/images/login.jpg)"></div>
     <div class="container">
         <div class="col-md-12 content-center">
             <div class="card-plain">
@@ -67,6 +67,7 @@
                             </span>
                         </div>
                     </div>
+                    <div id="tips"></div>
                     <div class="footer text-center">
                         <a class="btn btn-primary btn-round btn-lg btn-block" id="loginBtn">登录</a>
                         <h5><a href="forgot-password.html" class="link">忘记密码?</a></h5>
@@ -101,6 +102,8 @@
             success: function (data) {
                 if(data.code === 0){
                     location.href = "../index.html";
+                }else {
+                    $("#tips").html("账号或密码错误！<a href='forgot-password.html'>是否重置密码？</a>")
                 }
             }
         })
