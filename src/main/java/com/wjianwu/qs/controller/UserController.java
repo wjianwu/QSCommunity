@@ -64,6 +64,9 @@ public class UserController {
             if (!password.equals(repeatPwd)) {
                 return Result.error("两次密码不一样，请重新输入！");
             }
+            if (userService.checkAccount(account)) {
+                return Result.error("该账号已被注册！");
+            }
             userService.addUser(account, username, password);
             return Result.ok();
         } catch (Exception e) {

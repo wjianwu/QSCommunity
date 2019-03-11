@@ -28,4 +28,9 @@ public class UserServiceImpl implements UserService {
         user.setPassword(ShiroUtils.encrypt(password, salt));
         userDao.insert(user);
     }
+
+    @Override
+    public boolean checkAccount(String account) {
+        return userDao.manyAccount(account) > 0;
+    }
 }

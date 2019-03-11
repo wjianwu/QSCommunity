@@ -11,4 +11,5 @@ public interface UserDao extends BaseMapper<User> {
 
     User selectByAccount(String account);
 
+    int manyAccount(String account);
 }

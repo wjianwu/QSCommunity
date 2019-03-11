@@ -8,4 +8,6 @@ public interface UserService {
 
     void addUser(String account, String username, String password);
 
+    boolean checkAccount(String account);
+
 }
