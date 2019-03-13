@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/profile.html" afterDir="false" />
-    </list>
+    <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,18 +74,19 @@
         <counts>
           <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
           <entry key="html" value="10" />
-          <entry key="java" value="20" />
+          <entry key="java" value="21" />
           <entry key="jpg" value="5" />
+          <entry key="js" value="1" />
           <entry key="xml" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -101,7 +96,8 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="10" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="21" />
+          <entry key="JavaScript" value="1" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="1" />
         </counts>
@@ -109,14 +105,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="537" />
-          <entry key="java" value="509" />
+          <entry key="java" value="613" />
           <entry key="xml" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="537" />
-          <entry key="JAVA" value="509" />
+          <entry key="JAVA" value="613" />
           <entry key="SQL" value="22" />
           <entry key="XML" value="80" />
         </counts>
@@ -234,6 +230,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,30 +323,10 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,7 +336,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552379267654" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552447123825" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -368,19 +345,20 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\static\assets\images" />
-      <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\static\assets" />
-      <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wjianwu.qs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitProjects\QSCommunity\src\main\resources\static\assets\lib" />
       <recent name="D:\GitProjects\QSCommunity\src\main\resources\static\assets\images" />
       <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\java\com\wjianwu\qs\common\sms" />
       <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources" />
       <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wjianwu.qs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\static\assets\images" />
+      <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\static\assets" />
+      <recent name="C:\Users\wjianwu\IdeaProjects\QSCommunity\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -395,20 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.sss">
-    <configuration name="sss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wjianwu.qs.common.sss" />
-      <module name="QSCommunity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wjianwu.qs.common.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="QsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="QSCommunity" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wjianwu.qs.QsApplication" />
@@ -419,15 +384,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.QsApplication" />
-      <item itemvalue="Application.sss" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.sss" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -454,11 +410,12 @@
       <workItem from="1552359434421" duration="709000" />
       <workItem from="1552374630360" duration="101000" />
       <workItem from="1552378618593" duration="684000" />
+      <workItem from="1552445037822" duration="1386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38440000" />
+    <option name="totallyTimeSpent" value="39826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +429,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -777,10 +734,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="420">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/vue.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
