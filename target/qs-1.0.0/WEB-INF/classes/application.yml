@@ -1,6 +1,6 @@
 # Server 配置
 server:
-  port: 8888
+  port: 8080
 
 # Spring配置
 spring:
@@ -8,9 +8,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      url: jdbc:mysql://127.0.0.1:3306/qs?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+      url: jdbc:mysql://123.207.73.162:3306/qs?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
       username: root
-      password: 123456
+      password: Wjianwu&&z*l@true88
       filter:
         stat:
           log-slow-sql: true

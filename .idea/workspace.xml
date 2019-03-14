@@ -2,10 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/collapse.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/collapse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/footable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/footable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-editors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-editors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/google.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/list-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/list-group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/mail-inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/mail-inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/media-object.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/media-object.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/morris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/normal-tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/normal-tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/sortable-nestable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/sortable-nestable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ui_kit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ui_kit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/waves.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/waves.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/yandex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/yandex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/auth/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/advanced-form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/advanced-form-elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/alerts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/collapse.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/collapse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/dialogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/ec-product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/ec-product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/ec-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/ec-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/footable.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/footable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/form-editors.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/form-editors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/form-validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/form-wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/google.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/list-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/list-group.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/mail-inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/mail-inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/media-object.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/media-object.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/morris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/normal-tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/normal-tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/sortable-nestable.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/sortable-nestable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/ui_kit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/ui_kit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/waves.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/waves.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/other/yandex.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/other/yandex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/com/wjianwu/qs/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/assets/images/profile_av.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/assets/images/profile_av.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/auth/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/auth/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/auth/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/auth/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/auth/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/auth/sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/qs-1.0.0/WEB-INF/classes/static/other/profile.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,90 +135,65 @@
     <session id="1576775930">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
-          <entry key="html" value="15" />
-          <entry key="java" value="21" />
+          <entry key="css" value="8" />
+          <entry key="html" value="19" />
+          <entry key="java" value="22" />
           <entry key="jpg" value="5" />
-          <entry key="js" value="1" />
+          <entry key="js" value="5" />
           <entry key="xml" value="1" />
-          <entry key="yml" value="1" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
-          <entry key="HTML" value="15" />
+          <entry key="CSS" value="8" />
+          <entry key="HTML" value="19" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="21" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JAVA" value="22" />
+          <entry key="JavaScript" value="5" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="1" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="924" />
-          <entry key="java" value="613" />
+          <entry key="html" value="1170" />
+          <entry key="java" value="626" />
           <entry key="xml" value="102" />
+          <entry key="yml" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="924" />
-          <entry key="JAVA" value="613" />
+          <entry key="HTML" value="1170" />
+          <entry key="JAVA" value="626" />
           <entry key="SQL" value="22" />
           <entry key="XML" value="80" />
+          <entry key="YAML" value="120" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1601">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/profile.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1366">
-              <caret line="996" column="50" selection-start-line="996" selection-start-column="50" selection-end-line="996" selection-end-column="50" />
+            <state relative-caret-position="300">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#a#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#7;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#8;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#0;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#137#138#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,6 +204,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -191,6 +225,12 @@
       <find>最近</find>
       <find>Main</find>
       <find>registerBtn</find>
+      <find>person</find>
+      <find>manage</find>
+      <find>sett</find>
+      <find>shop</find>
+      <find>Michael</find>
+      <find>&lt;h4&gt;Michael&lt;/h4&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,7 +245,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-plus.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/Generator.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/redis/RedisUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/redis/RedisListUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/redis/RedisTest.java" />
@@ -222,13 +261,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/other/profile.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/lib/react.development.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/lib/react-dom.development.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/index3.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java" />
       </list>
     </option>
   </component>
@@ -266,9 +309,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="y" value="125" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-27" />
+    <option name="y" value="227" />
     <option name="width" value="1812" />
     <option name="height" value="857" />
   </component>
@@ -277,8 +320,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,22 +410,35 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552529198786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552556325563" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -458,12 +512,14 @@
       <workItem from="1552359434421" duration="709000" />
       <workItem from="1552374630360" duration="101000" />
       <workItem from="1552378618593" duration="684000" />
-      <workItem from="1552445037822" duration="5732000" />
+      <workItem from="1552445037822" duration="9923000" />
+      <workItem from="1552534263061" duration="5777000" />
+      <workItem from="1552552670167" duration="671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44172000" />
+    <option name="totallyTimeSpent" value="54811000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,7 +534,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18496802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -489,7 +545,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24382384" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20408164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.19742489" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -637,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -736,13 +785,6 @@
         <state relative-caret-position="-450" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="238774" selection-start-line="4" selection-start-column="238774" selection-end-line="4" selection-end-column="238774" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -750,33 +792,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/vue.min.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8400">
-          <caret line="280" column="70" selection-start-line="280" selection-start-column="70" selection-end-line="280" selection-end-column="70" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1841">
           <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
-          <folding>
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -794,31 +816,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="4" column="174255" selection-start-line="4" selection-start-column="174237" selection-end-line="4" selection-end-column="174255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="298" column="44" lean-forward="true" selection-end-line="1680" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1366">
-          <caret line="996" column="50" selection-start-line="996" selection-start-column="50" selection-end-line="996" selection-end-column="50" />
+        <state relative-caret-position="12177">
+          <caret line="1545" column="18" selection-start-line="1545" selection-start-column="18" selection-end-line="1545" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/react.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2937">
+          <caret line="3154" column="5" selection-start-line="3154" selection-start-column="5" selection-end-line="3154" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/react-dom.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="20898" column="4" selection-start-line="20898" selection-start-column="4" selection-end-line="20898" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/babel.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="1517" selection-start-line="1517" selection-end-line="1517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#a#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#7;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#8;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
           </folding>
         </state>
       </provider>

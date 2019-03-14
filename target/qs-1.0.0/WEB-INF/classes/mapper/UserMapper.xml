@@ -21,11 +21,20 @@
 
     <select id="selectByAccount" parameterType="java.lang.String" resultType="com.wjianwu.qs.entity.User">
         SELECT
-        *
+            *
         FROM
-        qs_user
+            qs_user
         WHERE
-        account = #{account}
+            account = #{account}
+    </select>
+
+    <select id="manyAccount" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT
+            COUNT(*)
+        FROM
+            qs_user
+        WHERE
+            account = #{account}
     </select>
 
 </mapper>
