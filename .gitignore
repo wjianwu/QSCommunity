@@ -2,3 +2,6 @@
 .idea/
 target/
 *.class
+.war
+.jar
+target/
