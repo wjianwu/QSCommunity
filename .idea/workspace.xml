@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="" />
+    <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +88,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="10" />
+          <entry key="html" value="15" />
           <entry key="java" value="21" />
           <entry key="jpg" value="5" />
           <entry key="js" value="1" />
@@ -94,7 +99,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="10" />
+          <entry key="HTML" value="15" />
           <entry key="Image" value="5" />
           <entry key="JAVA" value="21" />
           <entry key="JavaScript" value="1" />
@@ -104,14 +109,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="537" />
+          <entry key="html" value="924" />
           <entry key="java" value="613" />
           <entry key="xml" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="537" />
+          <entry key="HTML" value="924" />
           <entry key="JAVA" value="613" />
           <entry key="SQL" value="22" />
           <entry key="XML" value="80" />
@@ -120,7 +125,48 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1601">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1366">
+              <caret line="996" column="50" selection-start-line="996" selection-start-column="50" selection-end-line="996" selection-end-column="50" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#7;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#8;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,6 +190,7 @@
       <find>Oreo</find>
       <find>最近</find>
       <find>Main</find>
+      <find>registerBtn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,7 +215,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sms/SmsSignleSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/mmmm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sssss.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
@@ -176,11 +222,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/other/profile.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sss.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/other/profile.html" />
       </list>
     </option>
   </component>
@@ -321,7 +369,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,7 +384,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552447123825" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552529198786" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -410,12 +458,12 @@
       <workItem from="1552359434421" duration="709000" />
       <workItem from="1552374630360" duration="101000" />
       <workItem from="1552378618593" duration="684000" />
-      <workItem from="1552445037822" duration="1386000" />
+      <workItem from="1552445037822" duration="5732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39826000" />
+    <option name="totallyTimeSpent" value="44172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,6 +476,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -466,7 +515,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -602,9 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/redis/RedisStringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -630,13 +676,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/login.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="87" column="23" lean-forward="true" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -680,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1151">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/footable.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -704,24 +736,10 @@
         <state relative-caret-position="-450" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="883" column="56" selection-start-line="883" selection-start-column="56" selection-end-line="883" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="238774" selection-start-line="4" selection-start-column="238774" selection-end-line="4" selection-end-column="238774" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="280" column="70" selection-start-line="280" selection-start-column="70" selection-end-line="280" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -744,6 +762,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/vue.min.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8400">
+          <caret line="280" column="70" selection-start-line="280" selection-start-column="70" selection-end-line="280" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1841">
+          <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+          <folding>
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="58" column="78" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1601">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1366">
+          <caret line="996" column="50" selection-start-line="996" selection-start-column="50" selection-end-line="996" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#7;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#8;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

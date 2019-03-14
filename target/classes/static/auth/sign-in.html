@@ -45,7 +45,7 @@
     <div class="page-header-image" style="background-image:url(../assets/images/login.jpg)"></div>
     <div class="container">
         <div class="col-md-12 content-center">
-            <div class="card-plain">
+            <div class="card-plain" id="login-div">
                 <form class="form" method="POST" action="">
                     <div class="header">
                         <div class="logo-container">
@@ -55,13 +55,15 @@
                     </div>
                     <div class="content">
                         <div class="input-group input-lg">
-                            <input type="text" class="form-control" placeholder="邮箱/手机号" id="account"/>
+                            <input type="text" class="form-control" placeholder="邮箱/手机号" id="account"
+                                   v-model.trim="account" @keyup.enter="login"/>
                             <span class="input-group-addon">
                                 <i class="zmdi zmdi-account-circle"></i>
                             </span>
                         </div>
                         <div class="input-group input-lg">
-                            <input type="password" placeholder="Password" class="form-control" id="password"/>
+                            <input type="password" placeholder="Password" class="form-control" id="password"
+                                   v-model.trim="password" @keyup.enter="login"/>
                             <span class="input-group-addon">
                                 <i class="zmdi zmdi-lock"></i>
                             </span>
@@ -69,7 +71,7 @@
                     </div>
                     <div id="tips"></div>
                     <div class="footer text-center">
-                        <a class="btn btn-primary btn-round btn-lg btn-block" id="loginBtn">登录</a>
+                        <a class="btn btn-primary btn-round btn-lg btn-block" id="loginBtn" @click="login">登录</a>
                         <h5><a href="forgot-password.html" class="link">忘记密码?</a></h5>
                     </div>
                 </form>
@@ -80,8 +82,36 @@
 
 <!-- Jquery Core Js -->
 <script src="../assets/bundles/libscripts.bundle.js"></script>
-<script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-
+<!-- Lib Scripts Plugin Js -->
+<script src="../assets/bundles/vendorscripts.bundle.js"></script>
+<script src="../assets/lib/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#login-div',
+        data: {
+            account: "",
+            password: ""
+        },
+        methods: {
+            login: function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/user/login",
+                    data: JSON.stringify({"account": vm.account, "password": vm.password}),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.code === 0) {
+                            location.href = "../index.html";
+                        } else {
+                            $("#tips").html("账号或密码错误！<a href='forgot-password.html'>是否重置密码？</a>")
+                        }
+                    }
+                })
+            }
+        }
+    })
+</script>
 <script>
     $(".navbar-toggler").on('click', function () {
         $("html").toggleClass("nav-open");
@@ -92,22 +122,6 @@
     }).on("blur", function () {
         $(this).parent(".input-group").removeClass("input-group-focus");
     });
-    $("#loginBtn").on("click", function () {
-        $.ajax({
-            type: "POST",
-            url: "/user/login",
-            data: JSON.stringify({"account": $("#account").val(), "password": $("#password").val()}),
-            dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            success: function (data) {
-                if(data.code === 0){
-                    location.href = "../index.html";
-                }else {
-                    $("#tips").html("账号或密码错误！<a href='forgot-password.html'>是否重置密码？</a>")
-                }
-            }
-        })
-    })
 </script>
 </body>
 </html>

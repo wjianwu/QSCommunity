@@ -45,7 +45,7 @@
     <div class="page-header-image" style="background-image:url(../assets/images/login.jpg)"></div>
     <div class="container">
         <div class="col-md-12 content-center">
-            <div class="card-plain">
+            <div class="card-plain" id="reg-div">
                 <form class="form" method="POST" action="">
                     <div class="header">
                         <div class="logo-container">
@@ -56,33 +56,29 @@
                     </div>
                     <div class="content">
                         <div class="input-group">
-                            <input id="account" type="text" class="form-control" placeholder="请输入您的邮箱/手机号码"/>
-                            <span class="input-group-addon">
-                                <i class="zmdi zmdi-email"></i>
-                            </span>
+                            <input id="account" type="text" class="form-control" placeholder="请输入您的邮箱/手机号码"
+                                   v-model.trim="account" @keyup.enter="reg"/>
+                            <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
                         </div>
                         <div class="input-group">
                             <input id="username" type="text" class="form-control" placeholder="请输入您的昵称"
-                                   autocomplete="off"/>
-                            <span class="input-group-addon">
-                                <i class="zmdi zmdi-account-circle"></i>
-                            </span>
+                                   autocomplete="off" v-model.trim="username" @keyup.enter="reg"/>
+                            <span class="input-group-addon"><i class="zmdi zmdi-account-circle"></i></span>
                         </div>
                         <div class="input-group">
-                            <input id="password" type="password" class="form-control" placeholder="请输入您的密码"/>
-                            <span class="input-group-addon">
-                                <i class="zmdi zmdi-lock"></i>
-                            </span>
+                            <input id="password" type="password" class="form-control" placeholder="请输入您的密码"
+                                   v-model.trim="password" @keyup.enter="reg"/>
+                            <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
                         </div>
                         <div class="input-group">
-                            <input id="confirm-password" type="password" class="form-control" placeholder="请再次输入您的密码"/>
-                            <span class="input-group-addon">
-                                <i class="zmdi zmdi-lock"></i>
-                            </span>
+                            <input id="confirm-password" type="password" class="form-control" placeholder="请再次输入您的密码"
+                                   v-model.trim="repeatPwd" @keyup.enter="reg"/>
+                            <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
                         </div>
                     </div>
                     <div class="footer text-center">
-                        <a class="btn btn-primary btn-round btn-lg btn-block waves-effect waves-light" id="registerBtn">注册</a>
+                        <a class="btn btn-primary btn-round btn-lg btn-block waves-effect waves-light"
+                           @click="reg">注册</a>
                         <h5><a class="link" href="sign-in.html">已有账号？点我登陆</a></h5>
                     </div>
                 </form>
@@ -95,42 +91,51 @@
                 <ul>
                 </ul>
             </nav>
-            <!--<div class="copyright">-->
-            <!--&copy;-->
-            <!--<script>-->
-            <!--document.write(new Date().getFullYear())-->
-            <!--</script>-->
-            <!--</div>-->
         </div>
     </footer>
 </div>
 
 <!-- Jquery Core Js -->
 <script src="../assets/bundles/libscripts.bundle.js"></script>
-<script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="../assets/bundles/vendorscripts.bundle.js"></script>
+<!-- Lib Scripts Plugin Js -->
+<script src="../assets/lib/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#reg-div',
+        data: {
+            account: "",
+            username: "",
+            password: "",
+            repeatPwd: ""
+        },
+        methods: {
+            reg: function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/user/register",
+                    data: JSON.stringify({
+                        "account": vm.account,
+                        "username": vm.username,
+                        "password": vm.password,
+                        "repeatPwd": vm.repeatPwd
+                    }),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.code === 0) {
+                            location.href = "sign-in.html";
+                        }
+                    }
+                })
+            }
+        }
+    })
+</script>
 <script>
     $(".navbar-toggler").on('click', function () {
         $("html").toggleClass("nav-open");
     });
-    $("#registerBtn").on("click", function () {
-        $.ajax({
-            type: "POST",
-            url: "/user/register",
-            data: JSON.stringify({
-                "account": $("#account").val(),
-                "username": $("#username").val(),
-                "password": $("#password").val(),
-                "repeatPwd": $("#confirm-password").val()
-            }),
-            dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            success: function (data) {
-                if (data.code === 0) {
-                    location.href = "sign-in.html";
-                }
-            }
-        })
-    })
 </script>
 </body>
 </html>
