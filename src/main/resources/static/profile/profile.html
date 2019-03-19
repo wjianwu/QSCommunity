@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../assets/css/timeline.css">
     <link rel="stylesheet" href="../assets/css/color_skins.css">
 </head>
-<body class="theme-purple">
+<body class="theme-purple ls-toggle-menu">
 <!-- 提示 加载器 -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -38,11 +38,14 @@
                         class="m-l-10">QS</span></a>
             </div>
         </li>
-        <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a>
+        <li class="hidden-md-down">
+            <a href="../other/events.html" title="Events">
+                <i class="zmdi zmdi-calendar"></i>
+            </a>
         </li>
-        <li class="hidden-md-down"><a href="events.html" title="Events"><i class="zmdi zmdi-calendar"></i></a></li>
-        <li class="hidden-md-down"><a href="mail-inbox.html" title="Inbox"><i class="zmdi zmdi-email"></i></a></li>
-        <li><a href="contact.html" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>
+        <li class="hidden-md-down"><a href="../other/mail-inbox.html" title="Inbox"><i class="zmdi zmdi-email"></i></a>
+        </li>
+        <li><a href="../other/contact.html" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>
         <li class="dropdown">
             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                 <i class="zmdi zmdi-notifications"></i>
@@ -236,177 +239,98 @@
 <!-- 左侧 -->
 <aside id="leftsidebar" class="sidebar">
     <ul class="nav nav-tabs">
-        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#dashboard"><i
-                class="zmdi zmdi-home m-r-5"></i>QS-C</a></li>
-        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#user"><i
-                class="zmdi zmdi-account m-r-5"></i>User</a></li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#dashboard">
+                <i class="zmdi zmdi-home m-r-5"></i>
+                Home
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#user">
+                <i class="zmdi zmdi-account m-r-5"></i>
+                User
+            </a>
+        </li>
     </ul>
     <div class="tab-content">
-        <div class="tab-pane stretchRight" id="dashboard">
+        <div class="tab-pane stretchRight active" id="dashboard">
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN</li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                            class="zmdi zmdi-home"></i><span>Dashboard</span></a>
-                        <ul class="ml-menu">
-                            <li><a href="../index.html">Main</a></li>
-                            <li><a href="dashboard-rtl.html">RTL</a></li>
-                            <li><a href="../index2.html">Horizontal</a></li>
-                            <li><a href="ec-dashboard.html">Ecommerce</a></li>
-                            <li><a href="blog-dashboard.html">Blog</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>App</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="mail-inbox.html">Inbox</a></li>
-                            <li><a href="chat.html">Chat</a></li>
-                            <li><a href="events.html">Calendar</a></li>
-                            <li><a href="file-dashboard.html">File Manager</a></li>
-                            <li><a href="contact.html">Contact list</a></li>
-                            <li><a href="blog-dashboard.html">Blog</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-shopping-cart"></i><span>Ecommerce</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="ec-dashboard.html">Dashboard</a></li>
-                            <li><a href="ec-product.html">Product</a></li>
-                            <li><a href="ec-product-List.html">Product List</a></li>
-                            <li><a href="ec-product-detail.html">Product detail</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-swap-alt"></i><span>User Interface (UI)</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="ui_kit.html">UI KIT</a></li>
-                            <li><a href="alerts.html">Alerts</a></li>
-                            <li><a href="collapse.html">Collapse</a></li>
-                            <li><a href="colors.html">Colors</a></li>
-                            <li><a href="dialogs.html">Dialogs</a></li>
-                            <li><a href="icons.html">Icons</a></li>
-                            <li><a href="list-group.html">List Group</a></li>
-                            <li><a href="media-object.html">Media Object</a></li>
-                            <li><a href="modals.html">Modals</a></li>
-                            <li><a href="notifications.html">Notifications</a></li>
-                            <li><a href="progressbars.html">Progress Bars</a></li>
-                            <li><a href="range-sliders.html">Range Sliders</a></li>
-                            <li><a href="sortable-nestable.html">Sortable & Nestable</a></li>
-                            <li><a href="tabs.html">Tabs</a></li>
-                            <li><a href="waves.html">Waves</a></li>
-                        </ul>
-                    </li>
-                    <li class="header">FORMS, CHARTS, TABLES</li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Forms</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="basic-form-elements.html">Basic Elements</a></li>
-                            <li><a href="advanced-form-elements.html">Advanced Elements</a></li>
-                            <li><a href="form-examples.html">Form Examples</a></li>
-                            <li><a href="form-validation.html">Form Validation</a></li>
-                            <li><a href="form-wizard.html">Form Wizard</a></li>
-                            <li><a href="form-editors.html">Editors</a></li>
-                            <li><a href="form-upload.html">File Upload</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                            class="zmdi zmdi-grid"></i><span>Tables</span> </a>
-                        <ul class="ml-menu">
-                            <li><a href="normal-tables.html">Normal Tables</a></li>
-                            <li><a href="jquery-datatable.html">Jquery Datatables</a></li>
-                            <li><a href="editable-table.html">Editable Tables</a></li>
-                            <li><a href="footable.html">Foo Tables</a></li>
-                            <li><a href="table-color.html">Tables Color</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i
-                            class="zmdi zmdi-chart"></i><span>Charts</span> </a>
-                        <ul class="ml-menu">
-                            <li><a href="morris.html">Morris</a></li>
-                            <li><a href="flot.html">Flot</a></li>
-                            <li><a href="chartjs.html">ChartJS</a></li>
-                            <li><a href="sparkline.html">Sparkline</a></li>
-                            <li><a href="jquery-knob.html">Jquery Knob</a></li>
-                        </ul>
-                    </li>
-                    <li class="header">EXTRA COMPONENTS</li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-delicious"></i><span>Widgets</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="widgets-app.html">Apps Widgetse</a></li>
-                            <li><a href="widgets-data.html">Data Widgetse</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-lock"></i><span>Authentication</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="../auth/sign-in.html">Sign In</a></li>
-                            <li><a href="../auth/sign-up.html">Sign Up</a></li>
-                            <li><a href="../auth/forgot-password.html">Forgot Password</a></li>
-                            <li><a href="../error/404.html">Page 404</a></li>
-                            <li><a href="../error/500.html">Page 500</a></li>
-                            <li><a href="page-offline.html">Page Offline</a></li>
-                            <li><a href="locked.html">Locked Screen</a></li>
-                        </ul>
-                    </li>
-                    <li class="active open"><a href="javascript:void(0);" class="menu-toggle"><i
-                            class="zmdi zmdi-copy"></i><span>Sample Pages</span> </a>
-                        <ul class="ml-menu">
-                            <li><a href="blank.html">Blank Page</a></li>
-                            <li><a href="image-gallery.html">Image Gallery</a></li>
-                            <li class="active"><a href="profile.html">Profile</a></li>
-                            <li><a href="timeline.html">Timeline</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="invoices.html">Invoices</a></li>
-                            <li><a href="search-results.html">Search Results</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-map"></i><span>Maps</span>
-                    </a>
-                        <ul class="ml-menu">
-                            <li><a href="google.html">Google Map</a></li>
-                            <li><a href="yandex.html">YandexMap</a></li>
-                            <li><a href="jvectormap.html">jVectorMap</a></li>
-                        </ul>
-                    </li>
-                    <li class="header">Extra</li>
+                    <!--头像-->
                     <li>
-                        <div class="progress-container progress-primary m-t-10">
-                            <span class="progress-badge">Traffic this Month</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="67"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 67%;">
-                                    <span class="progress-value">67%</span>
-                                </div>
+                        <div class="user-info">
+                            <div class="image">
+                                <a href="../profile/profile.html">
+                                    <img src="../assets/images/profile_av.jpg" alt="User">
+                                </a>
                             </div>
-                        </div>
-                        <div class="progress-container progress-info">
-                            <span class="progress-badge">Server Load</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="86"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
-                                    <span class="progress-value">86%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-pane stretchLeft active" id="user">
-            <div class="menu">
-                <ul class="list">
-                    <li>
-                        <div class="user-info m-b-20 p-b-15">
-                            <div class="image"><a href="profile.html"><img src="../assets/images/profile_av.jpg"
-                                                                           alt="User"></a></div>
                             <div class="detail">
                                 <h4>NoFunk</h4>
                                 <small>Software Designer</small>
                             </div>
-                            <!--<a title="facebook" href="#"><i class="zmdi zmdi-facebook"></i></a>-->
-                            <!--<a title="twitter" href="#"><i class="zmdi zmdi-twitter"></i></a>-->
-                            <!--<a title="instagram" href="#"><i class="zmdi zmdi-instagram"></i></a>-->
+                        </div>
+                    </li>
+                    <!--导航栏-->
+                    <li class="open">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="zmdi zmdi-home"></i>
+                            <span>主页</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a href="../index.html">泊客空间</a></li>
+                            <li><a href="../other/dashboard-rtl.html">交际广场</a></li>
+                        </ul>
+                    </li>
+                    <li class="active open">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="zmdi zmdi-folder-person"></i>
+                            <span>个人</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li class="active"><a href="../index2.html">个人中心</a></li>
+                            <li><a href="../index2.html">推送文章</a></li>
+                            <li><a href="../other/ec-dashboard.html">发布动态</a></li>
+                            <li><a href="../other/blog-dashboard.html">我的收藏</a></li>
+                            <li><a href="../other/blog-dashboard.html">我的关注</a></li>
+                        </ul>
+                    </li>
+                    <li class="open">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="zmdi zmdi-star"></i>
+                            <span>管理</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a href="../index2.html">修改密码</a></li>
+                            <li><a href="../other/ec-dashboard.html">修改信息</a></li>
+                            <li><a href="../other/blog-dashboard.html">修改文章</a></li>
+                        </ul>
+                    </li>
+                    <li class="open">
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="zmdi zmdi-shopping-cart"></i>
+                            <span>其他</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a href="../index2.html">周边商城</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane stretchLeft" id="user">
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info m-b-20 p-b-15">
+                            <div class="image">
+                                <a href="profile.html">
+                                    <img src="../assets/images/profile_av.jpg" alt="User">
+                                </a>
+                            </div>
+                            <div class="detail">
+                                <h4>NoFunk</h4>
+                                <small>Software Designer</small>
+                            </div>
                             <p class="text-muted">个人简介</p>
                             <div class="row">
                                 <div class="col-4">
@@ -993,7 +917,7 @@
                     <div class="body">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-12">
-                                <div class="profile-image float-md-right">
+                                <div class="profile-image float-md-right ls-toggle-btn">
                                     <img src="../assets/images/profile_av.jpg" alt="">
                                 </div>
                             </div>
