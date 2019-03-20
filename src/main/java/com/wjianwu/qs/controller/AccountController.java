@@ -1,15 +1,15 @@
 package com.wjianwu.qs.controller;
 
-import com.wjianwu.qs.common.Result;
+import com.wjianwu.qs.common.R;
 import com.wjianwu.qs.service.AccountService;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
@@ -32,7 +32,7 @@ public class AccountController {
      * @return code
      */
     @RequestMapping("/login")
-    public Result userLogin(@RequestBody Map map) {
+    public R userLogin(@RequestBody Map map) {
         try {
             String account = (String) map.get("account");
             String password = (String) map.get("password");
@@ -40,9 +40,11 @@ public class AccountController {
             Subject subject = SecurityUtils.getSubject();
             UsernamePasswordToken token = new UsernamePasswordToken(account, password);
             subject.login(token);
-            return Result.ok();
+            return R.ok();
+        } catch (UnknownAccountException e) {
+            return R.error(100, "账号不存在！");
         } catch (Exception e) {
-            return Result.error();
+            return R.error();
         }
     }
 
@@ -53,7 +55,7 @@ public class AccountController {
      * @return code
      */
     @RequestMapping("/register")
-    public Result UserRegister(@RequestBody Map map) {
+    public R UserRegister(@RequestBody Map map) {
 
         try {
             String account = (String) map.get("account");
@@ -61,15 +63,15 @@ public class AccountController {
             String password = (String) map.get("password");
             String repeatPwd = (String) map.get("repeatPwd");
             if (!password.equals(repeatPwd)) {
-                return Result.error("两次密码不一样，请重新输入！");
+                return R.error("两次密码不一样，请重新输入！");
             }
             if (accountService.checkAccount(account)) {
-                return Result.error("该账号已被注册！");
+                return R.error("该账号已被注册！");
             }
             accountService.addAccount(account, username, password);
-            return Result.ok();
+            return R.ok();
         } catch (Exception e) {
-            return Result.error();
+            return R.error();
         }
     }
 }

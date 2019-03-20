@@ -3,6 +3,7 @@ package com.wjianwu.qs.service;
 import com.wjianwu.qs.entity.Article;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wjianwu
@@ -10,6 +11,6 @@ import java.util.List;
  */
 public interface ArticleService {
 
-    List<Article> queryAllArticle();
+    List<Article> queryAllArticle(Map map);
 
 }

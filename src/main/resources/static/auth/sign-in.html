@@ -103,6 +103,8 @@
                     success: function (data) {
                         if (data.code === 0) {
                             location.href = "../index.html";
+                        } else if (data.code === 100) {
+                            $("#tips").html("该账号不存在！<a href='sign-up.html'>点击前往注册...</a>")
                         } else {
                             $("#tips").html("账号或密码错误！<a href='forgot-password.html'>是否重置密码？</a>")
                         }

@@ -1,6 +1,6 @@
 package com.wjianwu.qs.controller;
 
-import com.wjianwu.qs.common.Result;
+import com.wjianwu.qs.common.R;
 import com.wjianwu.qs.entity.Article;
 import com.wjianwu.qs.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +23,12 @@ public class ArticleController {
     private ArticleService articleService;
 
     @RequestMapping("/list")
-    public Result showAllArticle() {
+    public R showAllArticle(@RequestBody Map map) {
         try {
-            List<Article> articleList = articleService.queryAllArticle();
-            return Result.ok();
+            List<Article> articleList = articleService.queryAllArticle(map);
+            return R.ok().put("articles", articleList);
         } catch (Exception e) {
-            return Result.error();
+            return R.error();
         }
     }
 }

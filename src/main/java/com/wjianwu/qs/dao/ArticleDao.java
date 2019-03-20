@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wjianwu.qs.entity.Article;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wjianwu
@@ -11,5 +12,5 @@ import java.util.List;
  */
 public interface ArticleDao extends BaseMapper<Article> {
 
-    List<Article> selectAllArticle();
+    List<Article> selectAllArticle(Map map);
 }

@@ -6,20 +6,25 @@ import java.util.Map;
 /**
  * @author wjianwu 2019/3/1 16:39
  */
-public class Result extends HashMap<String, Object> {
+public class R extends HashMap<String, Object> {
+
+    public R put(String key, Object value) {
+        super.put(key, value);
+        return this;
+    }
 
     /**
      * 构造
      */
-    public Result() {
+    public R() {
         put("code", 0);
     }
 
     /**
      * @return code=0
      */
-    public static Result ok() {
-        return new Result();
+    public static R ok() {
+        return new R();
     }
 
     /**
@@ -28,10 +33,10 @@ public class Result extends HashMap<String, Object> {
      * @param msg message
      * @return code=0 msg=msg
      */
-    public static Result ok(String msg) {
-        Result result = new Result();
-        result.put("msg", msg);
-        return result;
+    public static R ok(String msg) {
+        R r = new R();
+        r.put("msg", msg);
+        return r;
     }
 
     /**
@@ -40,10 +45,10 @@ public class Result extends HashMap<String, Object> {
      * @param map map
      * @return code=0 putAll(map)
      */
-    public static Result ok(Map<String, Object> map) {
-        Result result = new Result();
-        result.putAll(map);
-        return result;
+    public static R ok(Map<String, Object> map) {
+        R r = new R();
+        r.putAll(map);
+        return r;
     }
 
     /**
@@ -51,11 +56,11 @@ public class Result extends HashMap<String, Object> {
      *
      * @return code msg
      */
-    public static Result error(int code, String errMsg) {
-        Result result = new Result();
-        result.put("code", code);
-        result.put("msg", errMsg);
-        return result;
+    public static R error(int code, String errMsg) {
+        R r = new R();
+        r.put("code", code);
+        r.put("msg", errMsg);
+        return r;
     }
 
     /**
@@ -63,7 +68,7 @@ public class Result extends HashMap<String, Object> {
      *
      * @return code=500，msg="出现未知异常，请及时处理！"
      */
-    public static Result error() {
+    public static R error() {
         return error(500, "出现未知异常，请及时处理！");
     }
 
@@ -73,7 +78,7 @@ public class Result extends HashMap<String, Object> {
      * @param errMsg errMsg
      * @return code=500,msg=errorMsg
      */
-    public static Result error(String errMsg) {
+    public static R error(String errMsg) {
         return error(500, errMsg);
     }
 }

@@ -896,34 +896,34 @@
     </div>
     <div class="container-fluid">
         <!--分类导航栏-->
-        <div class="row clearfix">
+        <div class="row clearfix" id="bar">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="body" style="padding: 4px;margin-top: 14px">
                         <div class="row clearfix">
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">首页</p></a>
+                                    <a href="#" @click="query(0)"><p class="text-muted">首页</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">文章类</p></a>
+                                    <a href="#" @click="query(1)"><p class="text-muted">文章类</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">技术类</p></a>
+                                    <a href="#" @click="query(2)"><p class="text-muted">技术类</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">生活类</p></a>
+                                    <a href="#" @click="query(3)"><p class="text-muted">生活类</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">其他</p></a>
+                                    <a href="#" @click="query(4)"><p class="text-muted">其他</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center"></div>
@@ -931,22 +931,22 @@
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center"></div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">置顶排行</p></a>
+                                    <a href="#" @click="query(5)"><p class="text-muted">置顶排行</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">热度最高</p></a>
+                                    <a href="#" @click="query(6)"><p class="text-muted">热度最高</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">评论最多</p></a>
+                                    <a href="#" @click="query(7)"><p class="text-muted">评论最多</p></a>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-3 col-sm-12 text-center">
                                 <div class="body" style="padding: 0">
-                                    <a href="#"><p class="text-muted">收藏最多</p></a>
+                                    <a href="#" @click="query(8)"><p class="text-muted">收藏最多</p></a>
                                 </div>
                             </div>
                         </div>
@@ -958,140 +958,22 @@
             <!--左侧比例8列表卡片-->
             <div class="col-lg-8 col-md-12">
                 <div class="row clearfix">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
+                    <div class="col-lg-12" id="cards">
+                        <div class="card" id="test">
+                            <div class="header"><h2>关于Bootstrap的栅栏系统的表达方式</h2>
                                 <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
+                                    <li class="remove">2019-3-17 17:09:54</li>
                                 </ul>
                             </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
+                            <div class="body" style="padding-top: 0">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2">
+                                        <div style="width: 60px;height: 60px;background-color: #0D0A0A;float: left"></div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10" style="font-size: 12px;">&emsp;</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="header">
-                                <h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">
-                                        2019-3-17 17:09:54
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row text-center"></div>
-                            </div>
-                        </div>
-                        <script>
-
-                        </script>
                     </div>
                 </div>
             </div>
@@ -1139,5 +1021,38 @@
 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
 <script src="assets/js/pages/index.js"></script>
+<script src="assets/lib/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#bar',
+        data: {},
+        methods: {
+            query: function (type) {
+                $.ajax({
+                    type: "POST",
+                    url: "/article/list",
+                    data: JSON.stringify({"page": 1, "limit": 10, "type": type}),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.code === 0) {
+                            var cards = "";
+                            for (var i = 0; i < data["articles"].length; i++) {
+                                var article = data["articles"][i];
+                                cards += '<div class="card" id="test"><div class="header"><h2>' + article["articleTitle"] + '</h2>' +
+                                    '<ul class="header-dropdown"><li class="remove">' + article["createTime"] + '</li></ul></div>' +
+                                    '<div class="body" style="padding-top: 0"><div class="row"><div class="col-lg-1 col-md-1">' +
+                                    '<div style="width: 60px;height: 60px;background-color: #0D0A0A;float: left"></div></div>' +
+                                    '<div class="col-lg-11 col-md-11" style="font-size: 12px;">&emsp;' + article["articleTitleDetail"] + '</div></div></div></div>'
+                            }
+                            $("#cards").html(cards);
+                        }
+                    }
+                });
+            }
+        }
+    });
+    vm.query();
+</script>
 </body>
 </html>

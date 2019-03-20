@@ -19,11 +19,17 @@
 
     <select id="selectAllArticle" resultType="com.wjianwu.qs.entity.Article">
         SELECT
-            *
+        *
         FROM
-            qs_article
+        qs_article
+        <where>
+            <if test="type != null and type != ''">
+                module_id = #{type}
+            </if>
+        </where>
         ORDER BY
-            create_time
+        create_time
         DESC
+        LIMIT #{limit}
     </select>
 </mapper>

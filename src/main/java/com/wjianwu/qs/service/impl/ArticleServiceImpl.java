@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wjianwu
@@ -19,7 +20,7 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleDao articleDao;
 
     @Override
-    public List<Article> queryAllArticle() {
-        return articleDao.selectAllArticle();
+    public List<Article> queryAllArticle(Map map) {
+        return articleDao.selectAllArticle(map);
     }
 }
