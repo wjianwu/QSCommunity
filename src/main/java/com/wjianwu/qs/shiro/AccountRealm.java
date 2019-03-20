@@ -1,8 +1,8 @@
 package com.wjianwu.qs.shiro;
 
 import com.wjianwu.qs.common.ShiroUtils;
-import com.wjianwu.qs.dao.UserDao;
-import com.wjianwu.qs.entity.User;
+import com.wjianwu.qs.dao.AccountDao;
+import com.wjianwu.qs.entity.Account;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
@@ -17,10 +17,10 @@ import org.springframework.stereotype.Component;
  * @author wjianwu 2019/2/26 16:50
  */
 @Component
-public class UserRealm extends AuthorizingRealm {
+public class AccountRealm extends AuthorizingRealm {
 
     @Autowired
-    private UserDao userDao;
+    private AccountDao accountDao;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -31,11 +31,11 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
 
         UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
-        User user = userDao.selectByAccount(token.getUsername());
-        if (user == null) {
+        Account account = accountDao.selectByAccount(token.getUsername());
+        if (account == null) {
             throw new UnknownAccountException();
         }
-        return new SimpleAuthenticationInfo(user, user.getPassword(), ByteSource.Util.bytes(user.getPasswordSalt()), getName());
+        return new SimpleAuthenticationInfo(account, account.getPassword(), ByteSource.Util.bytes(account.getPwdSalt()), getName());
     }
 
     @Override

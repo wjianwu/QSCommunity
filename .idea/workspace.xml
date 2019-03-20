@@ -2,65 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/QsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/QsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/UserRealm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/datatablescripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/datatablescripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/flotchartsscripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/flotchartsscripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/footable.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/footable.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/fullcalendarscripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/fullcalendarscripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/jvectormap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/jvectormap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/libscripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/libscripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/morrisscripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/morrisscripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/sparkline.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/sparkline.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/vendorscripts.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/bundles/vendorscripts.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/authentication.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/authentication.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/chatapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/chatapp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/color_skins.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/color_skins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/ecommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/ecommerce.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/hm-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/hm-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/inbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/inbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/cloudy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/cloudy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/rain.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/rain.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/sky.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/sky.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/summer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/summer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/wind.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/images/weather/wind.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/blog/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/blog/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/calendar/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/cards/basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/cards/basic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/chartjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/chartjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/flot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/jquery-knob.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/jquery-knob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/morris.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/morris.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/polar_area_chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/polar_area_chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/sparkline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/charts/sparkline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ecommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ecommerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/file/filemanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/file/filemanager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/advanced-form-elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/advanced-form-elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/basic-form-elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/basic-form-elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/editors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/editors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/form-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/form-validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/form-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/forms/form-wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/index2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/index2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/maps/google.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/maps/google.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/maps/jvectormap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/maps/jvectormap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/medias/image-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/medias/image-gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/rtl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/rtl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/tables/editable-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/tables/editable-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/tables/footable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/tables/footable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/tables/jquery-datatable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/tables/jquery-datatable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/assets/images/sm/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/assets/images/sm/avatar2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/dialogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/range-sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/range-sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/sortable-nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ui/sortable-nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/widgets/infobox/infobox-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/widgets/infobox/infobox-1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/animate-css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/animate-css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-notify/bootstrap-notify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-notify/bootstrap-notify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-select/css/bootstrap-select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-select/css/bootstrap-select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/chartjs/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/chartjs/Chart.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/chartjs/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/chartjs/Chart.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/chartjs/polar_area_chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/chartjs/polar_area_chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ckeditor/ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/dropzone/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/dropzone/dropzone.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/dropzone/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/dropzone/dropzone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/editable-table/mindmup-editabletable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/editable-table/mindmup-editabletable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/footable-bootstrap/css/footable.standalone.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/footable-bootstrap/css/footable.standalone.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/fullcalendar/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/fullcalendar/fullcalendar.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/gmaps/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/gmaps/gmaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ion-rangeslider/css/ion.rangeSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ion-rangeslider/css/ion.rangeSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ion-rangeslider/js/ion.rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/ion-rangeslider/js/ion.rangeSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.bootstrap4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.colVis.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.colVis.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.html5.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.html5.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.print.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/buttons.print.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/dataTables.buttons.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/buttons/dataTables.buttons.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-spinner/css/bootstrap-spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-spinner/css/bootstrap-spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-spinner/js/jquery.spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-spinner/js/jquery.spinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-steps/jquery.steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-steps/jquery.steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-validation/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jquery-validation/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/css/lightgallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/css/lightgallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/fonts/lg.svg~n1z373" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/fonts/lg.svg~n1z373" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/fonts/lg.ttf~n1z373" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/fonts/lg.ttf~n1z373" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/fonts/lg.woff~n1z373" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/fonts/lg.woff~n1z373" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/js/lightgallery-all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/light-gallery/js/lightgallery-all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/momentjs/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/momentjs/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/morrisjs/morris.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/morrisjs/morris.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/morrisjs/morris.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/morrisjs/morris.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/multi-select/css/multi-select.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/multi-select/css/multi-select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/multi-select/js/jquery.multi-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/multi-select/js/jquery.multi-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nestable/jquery-nestable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nestable/jquery-nestable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nestable/jquery.nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nestable/jquery.nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nouislider/nouislider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nouislider/nouislider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nouislider/nouislider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/nouislider/nouislider.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/sweetalert/sweetalert.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/sweetalert/sweetalert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/auth/sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/error/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/error/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/error/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/basic-form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/basic-form-elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blog-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blog-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/chartjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/collapse.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/collapse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/colors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/agent-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/agent-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blog-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blog-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blog-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blog-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blog-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blog-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blog-post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/dashboard-rtl.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/dashboard-rtl.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-product-List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-product-List.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/editable-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/editable-table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/file-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/file-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/flot.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/flot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/footable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/footable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-editors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-editors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-validation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-wizard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/google.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/image-gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/image-gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/invoices.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/invoices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/jquery-datatable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/jquery-datatable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/jquery-knob.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/jquery-knob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/file-documents.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/file-documents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/file-images.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/file-images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/file-media.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/file-media.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/jvectormap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/jvectormap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/list-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/list-group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/mail-inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/mail-inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/media-object.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/media-object.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/modals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/morris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/normal-tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/normal-tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/profile/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/mail-compose.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/mail-compose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/mail-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/mail-single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/progressbars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/progressbars.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/range-sliders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/range-sliders.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/search-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/search-results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/sortable-nestable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/sortable-nestable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/sparkline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/sparkline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/table-color.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/table-color.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ui_kit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ui_kit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/waves.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/waves.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/widgets-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/widgets-app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/widgets-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/widgets-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/yandex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/yandex.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,9 +224,9 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -147,11 +234,11 @@
           <entry key="css" value="16" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="46" />
-          <entry key="java" value="22" />
+          <entry key="java" value="26" />
           <entry key="jpg" value="5" />
           <entry key="js" value="8" />
           <entry key="xml" value="1" />
-          <entry key="yml" value="3" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -159,11 +246,11 @@
           <entry key="CSS" value="16" />
           <entry key="HTML" value="46" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="26" />
           <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="3" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -188,67 +275,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="812" column="13" selection-start-line="812" selection-start-column="13" selection-end-line="812" selection-end-column="13" />
-              <folding>
-                <element signature="n#li#0;n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#li#3;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/profile/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-              <folding>
-                <element signature="n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -383,8 +410,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-754" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
@@ -394,7 +420,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -442,104 +467,13 @@
               <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="sms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qs" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,7 +484,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552984499057" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553046135159" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -634,11 +568,12 @@
       <workItem from="1552978015477" duration="169000" />
       <workItem from="1552982202929" duration="1959000" />
       <workItem from="1552992785360" duration="2452000" />
+      <workItem from="1553045266917" duration="689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72435000" />
+    <option name="totallyTimeSpent" value="73124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -650,10 +585,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -664,7 +598,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19226637" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24060151" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.19742489" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -690,7 +624,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -701,7 +635,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33619764" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19226637" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.19742489" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,34 +686,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/sms/SmsSignleSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/redis/RedisStringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/mmmm.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/zip/ZipFile.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -872,13 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1841">
           <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -1034,50 +933,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="812" column="13" selection-start-line="812" selection-start-column="13" selection-end-line="812" selection-end-column="13" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#3;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#4;n#div#0;n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="4" column="237907" selection-start-line="4" selection-start-column="237907" selection-end-line="4" selection-end-column="237907" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="812" column="13" selection-start-line="812" selection-start-column="13" selection-end-line="812" selection-end-column="13" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,6 +967,41 @@
             <element signature="n#ul#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/QsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>

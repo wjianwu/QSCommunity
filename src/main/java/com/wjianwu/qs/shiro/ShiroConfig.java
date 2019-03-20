@@ -31,9 +31,9 @@ public class ShiroConfig {
     }
 
     @Bean("securityManager")
-    public SecurityManager securityManager(UserRealm userRealm, SessionManager sessionManager) {
+    public SecurityManager securityManager(AccountRealm accountRealm, SessionManager sessionManager) {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
-        securityManager.setRealm(userRealm);
+        securityManager.setRealm(accountRealm);
         securityManager.setSessionManager(sessionManager);
         return securityManager;
     }
@@ -54,7 +54,7 @@ public class ShiroConfig {
         filterMap.put("/auth/**", "anon");
         filterMap.put("/error/**", "anon");
         /* 用户登录注册重置密码接口开放 */
-        filterMap.put("/user/**","anon");
+        filterMap.put("/account/**","anon");
 
         filterMap.put("/**", "authc");
 

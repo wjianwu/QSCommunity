@@ -16,6 +16,10 @@ import java.util.ResourceBundle;
  */
 public class GenUtils {
 
+    public static void main(String[] args) {
+        generator("qs_article");
+    }
+
     public static void generator(String tableName) {
 
         ResourceBundle resource = ResourceBundle.getBundle("mybatis-plus");

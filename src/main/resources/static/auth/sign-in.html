@@ -96,7 +96,7 @@
             login: function () {
                 $.ajax({
                     type: "POST",
-                    url: "/user/login",
+                    url: "/account/login",
                     data: JSON.stringify({"account": vm.account, "password": vm.password}),
                     dataType: "json",
                     contentType: "application/json; charset=utf-8",

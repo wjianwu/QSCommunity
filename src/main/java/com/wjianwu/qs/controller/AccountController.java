@@ -1,7 +1,7 @@
 package com.wjianwu.qs.controller;
 
 import com.wjianwu.qs.common.Result;
-import com.wjianwu.qs.service.UserService;
+import com.wjianwu.qs.service.AccountService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
@@ -12,19 +12,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author wjianwu
- * @since 2019-02-26
+ * @since 2019-03-19
  */
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/account")
+public class AccountController {
 
     @Autowired
-    private UserService userService;
+    private AccountService accountService;
 
     /**
      * 登录逻辑 Controller
@@ -35,11 +34,11 @@ public class UserController {
     @RequestMapping("/login")
     public Result userLogin(@RequestBody Map map) {
         try {
-            String username = (String) map.get("account");
+            String account = (String) map.get("account");
             String password = (String) map.get("password");
 
             Subject subject = SecurityUtils.getSubject();
-            UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+            UsernamePasswordToken token = new UsernamePasswordToken(account, password);
             subject.login(token);
             return Result.ok();
         } catch (Exception e) {
@@ -64,10 +63,10 @@ public class UserController {
             if (!password.equals(repeatPwd)) {
                 return Result.error("两次密码不一样，请重新输入！");
             }
-            if (userService.checkAccount(account)) {
+            if (accountService.checkAccount(account)) {
                 return Result.error("该账号已被注册！");
             }
-            userService.addUser(account, username, password);
+            accountService.addAccount(account, username, password);
             return Result.ok();
         } catch (Exception e) {
             return Result.error();
