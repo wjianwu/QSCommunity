@@ -1,5 +1,6 @@
 package com.wjianwu.qs.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -17,7 +18,12 @@ public class Article implements Serializable {
 
     @TableId(value = "article_id", type = IdType.AUTO)
     private Integer articleId;
+    private Integer accountId;
+    @TableField(exist = false)
+    private String username;
     private Integer moduleId;
+    @TableField(exist = false)
+    private String headerImage;
     private String articleTitle;
     private String articleTitleDetail;
     private String articleContent;
@@ -36,12 +42,36 @@ public class Article implements Serializable {
         this.articleId = articleId;
     }
 
+    public Integer getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(Integer accountId) {
+        this.accountId = accountId;
+    }
+
     public Integer getModuleId() {
         return moduleId;
     }
 
     public void setModuleId(Integer moduleId) {
         this.moduleId = moduleId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getHeaderImage() {
+        return headerImage;
+    }
+
+    public void setHeaderImage(String headerImage) {
+        this.headerImage = headerImage;
     }
 
     public String getArticleTitle() {

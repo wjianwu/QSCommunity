@@ -5,6 +5,7 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.wjianwu.qs.entity.Article">
         <id column="article_id" property="articleId"/>
+        <result column="account_id" property="accountId"/>
         <result column="module_id" property="moduleId"/>
         <result column="article_title" property="articleTitle"/>
         <result column="article_title_detail" property="articleTitleDetail"/>
@@ -19,12 +20,16 @@
 
     <select id="selectAllArticle" resultType="com.wjianwu.qs.entity.Article">
         SELECT
-        *
+        ar.*,ac.username,ac.header_image
         FROM
-        qs_article
+        qs_article AS ar
+        LEFT JOIN
+        qs_account AS ac
+        ON
+        ar.account_id = ac.account_id
         <where>
             <if test="type != null and type != ''">
-                module_id = #{type}
+                ar.module_id = #{type}
             </if>
         </where>
         ORDER BY

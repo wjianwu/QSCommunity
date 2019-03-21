@@ -7,11 +7,16 @@ import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 import java.util.Map;
 
 /**
@@ -55,7 +60,7 @@ public class AccountController {
      * @return code
      */
     @RequestMapping("/register")
-    public R UserRegister(@RequestBody Map map) {
+    public R userRegister(@RequestBody Map map) {
 
         try {
             String account = (String) map.get("account");
@@ -74,5 +79,32 @@ public class AccountController {
             return R.error();
         }
     }
+
+    /**
+     * 上传文件（本地路径） Controller
+     *
+     * @param file file
+     * @return code
+     */
+    @RequestMapping("/upload")
+    public R uploadImage(@RequestParam("file") MultipartFile file) {
+
+        try {
+            if (!file.isEmpty()) {
+                // 上传目录
+                File upload = new File(ResourceUtils.getURL("src/main/resources/static/upload").getPath());
+                String uploadPath = upload.getPath();
+                // 文件名
+                String filename = file.getOriginalFilename();
+                File newFile = new File(uploadPath + File.separator + filename);
+                file.transferTo(newFile);
+                return R.ok();
+            }
+            return R.error("出现错误，文件为空！");
+        } catch (Exception e) {
+            return R.error();
+        }
+    }
+
 }
 
