@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/color_skins.css">
     <link rel="stylesheet" href="assets/css/custom/index.css">
 </head>
-<body class="theme-purple" id="vue">
+<body class="theme-purple">
 <!-- 加载样式 -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -253,7 +253,7 @@
             </a>
         </li>
     </ul>
-    <div class="tab-content">
+    <div class="tab-content" id="info">
         <div class="tab-pane stretchRight active" id="dashboard">
             <div class="menu">
                 <ul class="list">
@@ -261,11 +261,11 @@
                         <div class="user-info">
                             <div class="image">
                                 <a href="profile/profile.html">
-                                    <img src="assets/images/profile_av.jpg" alt="User">
+                                    <img id="header-image" v-bind:src="account.headerImage" alt="User">
                                 </a>
                             </div>
                             <div class="detail">
-                                <h4>NoFunk</h4>
+                                <h4 id="username">{{account.username}}</h4>
                                 <small>Software Designer</small>
                             </div>
                         </div>
@@ -876,7 +876,7 @@
 </div>
 
 <!-- Main Content -->
-<section class="content home">
+<section class="content home" id="content">
     <div class="block-header">
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12">
@@ -895,7 +895,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="bar">
+    <div class="container-fluid">
         <!--分类导航栏-->
         <div class="row clearfix">
             <div class="col-sm-12">
@@ -959,33 +959,35 @@
             <!--左侧比例8列表卡片-->
             <div class="col-lg-8 col-md-12">
                 <div class="row clearfix">
-                    <div class="col-lg-12" id="cards">
-                        <div class="card" id="test">
-                            <div class="header"><h2>关于Bootstrap的栅栏系统的表达方式</h2>
-                                <ul class="header-dropdown">
-                                    <li class="remove">2019-3-17 17:09:54</li>
-                                </ul>
-                            </div>
-                            <div class="body" style="padding-top: 0">
-                                <div class="row">
-                                    <div class="col-lg-1 col-md-1">
-                                        <div style="width: 60px;height: 60px;background-color: #0D0A0A;float: left"></div>
-                                    </div>
-                                    <div class="col-lg-11 col-md-11" style="font-size: 12px;">&emsp;在编辑器中可以执行 layui
-                                        相关的一切代码 你也可以点击左侧导航针对性地
-                                        试验我们提供的示例 如果最左侧的导航的高度超出了你的们提供的示例 如果最左侧的导航的高度超出了你的
-                                        屏幕 你可以将鼠标移入. 屏幕 你可以将鼠标移入...
-                                        <div class="col-lg-12 col-md-12">
-                                            <div style="float: right">
-                                                <i class="zmdi zmdi-thumb-up col-blue"></i>&emsp;123
-                                                &emsp;<i class="zmdi zmdi-eye col-amber"></i>&emsp;123
-                                                &emsp;<i class="zmdi zmdi-comment-text col-red"></i>&emsp;123
+                    <div class="col-lg-12">
+                        <template v-for="card in cards">
+                            <div class="card">
+                                <div class="header">
+                                    <h2>{{card["articleTitle"]}}</h2>
+                                    <ul class="header-dropdown">
+                                        <li class="remove">{{card["createTime"]}}</li>
+                                    </ul>
+                                </div>
+                                <div class="body" style="padding-top: 0">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-1">
+                                            <!--<div style="width: 60px;height: 60px;background-image:url('/upload/profile_av.jpg');background-size: 60px 60px;float: left;border-radius: 20%"></div>-->
+                                            <img v-bind:src="card['headerImage']" alt="User">
+                                        </div>
+                                        <div class="col-lg-11 col-md-11" style="font-size: 12px;">
+                                            &emsp;{{card["articleTitleDetail"]}}
+                                            <div class="col-lg-12 col-md-12">
+                                                <div style="float: right">
+                                                    <i class="zmdi zmdi-eye col-amber"></i>&emsp;520
+                                                    &emsp;<i class="zmdi zmdi-comment-text col-red"></i>&emsp;{{card["commentCount"]}}
+                                                    &emsp;<i class="zmdi zmdi-thumb-up col-blue"></i>&emsp;{{card["likeCount"]}}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </template>
                     </div>
                 </div>
             </div>
@@ -1038,10 +1040,10 @@
 <script src="assets/js/pages/index.js"></script>
 <script src="assets/lib/vue.min.js"></script>
 <script>
-    var vm = new Vue({
-        el: '#vue',
+    var content = new Vue({
+        el: '#content',
         data: {
-            account: {}
+            cards: []
         },
         methods: {
             query: function (type) {
@@ -1053,32 +1055,7 @@
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {
                         if (data.code === 0) {
-                            var cards = "";
-                            for (var i = 0; i < data["articles"].length; i++) {
-                                var article = data["articles"][i];
-                                cards += '<div class="card show-click" style="" id="test">\n' +
-                                    '                            <div class="header"><h2>' + article["articleTitle"] + '</h2>' +
-                                    '                                <ul class="header-dropdown">' +
-                                    '                                    <li class="remove">' + article["createTime"] + '</li>' +
-                                    '                                </ul>' +
-                                    '                            </div>' +
-                                    '                            <div class="body" style="padding-top: 0">' +
-                                    '                                <div class="row">' +
-                                    '                                    <div class="col-lg-1 col-md-1">' +
-                                    '                                        <div style="width: 60px;height: 60px;background-image:url(' + './upload/' + article["headerImage"] + ');background-size: 60px 60px;float: left;border-radius: 15%"></div>' +
-                                    '                                    </div>' +
-                                    '                                    <div class="col-lg-11 col-md-11" style="font-size: 12px;">&emsp;' + article["articleTitleDetail"] +
-                                    '                                        <div class="align-right">' +
-                                    '                                            <i class="zmdi zmdi-eye col-amber"></i>&emsp;520' +
-                                    '                                            &emsp;<i class="zmdi zmdi-comment-text col-red"></i>&emsp;' + article["commentCount"] +
-                                    '                                            &emsp;<i class="zmdi zmdi-thumb-up col-blue"></i>&emsp;' + article["likeCount"] +
-                                    '                                        </div>' +
-                                    '                                    </div>' +
-                                    '                                </div>' +
-                                    '                            </div>' +
-                                    '                        </div>'
-                            }
-                            $("#cards").html(cards);
+                            content.cards = data["articles"];
                         }
                     }
                 });
@@ -1100,16 +1077,29 @@
                         }
                     }
                 })
-            },
+            }
+        }
+    });
+    content.query();
+
+    var left = new Vue({
+        el: '#info',
+        data: {
+            account: {
+                username: "YourName",
+                headerImage: "assets/images/profile_av.jpg"
+            }
+        },
+        methods: {
             info: function () {
                 $.get("/account/info/" + getUrlParam("accountId"), function (r) {
-                    vm.account = r["account"];
+                    left.account = r["account"];
+                    left.account["headerImage"] = "upload/" + left.account["headerImage"];
                 });
             }
         }
     });
-    vm.query();
-    vm.info();
+    left.info();
 
     function getUrlParam(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
