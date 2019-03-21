@@ -1,0 +1,4 @@
+.show-click:hover {
+    box-shadow: 0 0 5px rgba(255, 63, 190, 0.58), 0 6px 20px rgba(54, 209, 84, 0.2);
+    transition: all 0s ease-in-out
+}

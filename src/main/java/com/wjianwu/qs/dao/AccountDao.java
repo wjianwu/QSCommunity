@@ -9,7 +9,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface AccountDao extends BaseMapper<Account> {
 
+    int manyAccount(String account);
+
     Account selectByAccount(String account);
 
-    int manyAccount(String account);
+    Account selectAccountInfo(Integer accountId);
 }

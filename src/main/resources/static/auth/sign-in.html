@@ -102,7 +102,7 @@
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {
                         if (data.code === 0) {
-                            location.href = "../index.html";
+                            location.href = "../index.html?accountId=" + data["accountId"];
                         } else if (data.code === 100) {
                             $("#tips").html("该账号不存在！<a href='sign-up.html'>点击前往注册...</a>")
                         } else {

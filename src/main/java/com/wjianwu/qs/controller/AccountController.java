@@ -1,6 +1,7 @@
 package com.wjianwu.qs.controller;
 
 import com.wjianwu.qs.common.R;
+import com.wjianwu.qs.entity.Account;
 import com.wjianwu.qs.service.AccountService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UnknownAccountException;
@@ -8,11 +9,8 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ResourceUtils;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -45,7 +43,8 @@ public class AccountController {
             Subject subject = SecurityUtils.getSubject();
             UsernamePasswordToken token = new UsernamePasswordToken(account, password);
             subject.login(token);
-            return R.ok();
+            Account accountEntity = (Account) subject.getPrincipal();
+            return R.ok().put("accountId", accountEntity.getAccountId());
         } catch (UnknownAccountException e) {
             return R.error(100, "账号不存在！");
         } catch (Exception e) {
@@ -101,6 +100,23 @@ public class AccountController {
                 return R.ok();
             }
             return R.error("出现错误，文件为空！");
+        } catch (Exception e) {
+            return R.error();
+        }
+    }
+
+    /**
+     * 获取用户信息
+     *
+     * @param accountId accountId
+     * @return code
+     */
+    @RequestMapping("/info/{accountId}")
+    public R queryInfo(@PathVariable("accountId") Integer accountId) {
+
+        try {
+            Account account = accountService.queryAccountInfo(accountId);
+            return R.ok().put("account", account);
         } catch (Exception e) {
             return R.error();
         }

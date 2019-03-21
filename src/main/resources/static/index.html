@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js " lang="en">
+<html class="no-js " lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -13,14 +13,9 @@
     <!-- 自定义 Css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/color_skins.css">
-    <style>
-        .show-click:hover {
-            box-shadow: 0 0 5px rgba(255, 63, 190, 0.58), 0 6px 20px rgba(54, 209, 84, 0.2);
-            transition: all 0s ease-in-out
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/custom/index.css">
 </head>
-<body class="theme-purple">
+<body class="theme-purple" id="vue">
 <!-- 加载样式 -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -1044,8 +1039,10 @@
 <script src="assets/lib/vue.min.js"></script>
 <script>
     var vm = new Vue({
-        el: '#bar',
-        data: {},
+        el: '#vue',
+        data: {
+            account: {}
+        },
         methods: {
             query: function (type) {
                 $.ajax({
@@ -1103,10 +1100,26 @@
                         }
                     }
                 })
+            },
+            info: function () {
+                $.get("/account/info/" + getUrlParam("accountId"), function (r) {
+                    vm.account = r["account"];
+                });
             }
         }
     });
     vm.query();
+    vm.info();
+
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        } else {
+            return null;
+        }
+    }
 </script>
 </body>
 </html>

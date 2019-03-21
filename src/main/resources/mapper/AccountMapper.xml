@@ -4,24 +4,33 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.wjianwu.qs.entity.Account">
-        <id column="account_id" property="accountId" />
-        <result column="account" property="account" />
-        <result column="username" property="username" />
-        <result column="password" property="password" />
-        <result column="pwd_salt" property="pwdSalt" />
-        <result column="user_sex" property="userSex" />
-        <result column="user_birth" property="userBirth" />
-        <result column="user_email" property="userEmail" />
-        <result column="user_integral" property="userIntegral" />
-        <result column="user_level" property="userLevel" />
-        <result column="header_image" property="headerImage" />
-        <result column="location" property="location" />
-        <result column="status" property="status" />
-        <result column="create_time" property="createTime" />
-        <result column="update_time" property="updateTime" />
+        <id column="account_id" property="accountId"/>
+        <result column="account" property="account"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="pwd_salt" property="pwdSalt"/>
+        <result column="user_sex" property="userSex"/>
+        <result column="user_birth" property="userBirth"/>
+        <result column="user_email" property="userEmail"/>
+        <result column="user_integral" property="userIntegral"/>
+        <result column="user_level" property="userLevel"/>
+        <result column="header_image" property="headerImage"/>
+        <result column="location" property="location"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->
+    <select id="manyAccount" parameterType="java.lang.String" resultType="java.lang.Integer">
+        SELECT
+            COUNT(*)
+        FROM
+            qs_account
+        WHERE
+            account = #{account}
+    </select>
+
     <select id="selectByAccount" parameterType="java.lang.String" resultType="com.wjianwu.qs.entity.Account">
         SELECT
             *
@@ -31,13 +40,15 @@
             account = #{account}
     </select>
 
-    <select id="manyAccount" parameterType="java.lang.String" resultType="java.lang.Integer">
+    <select id="selectAccountInfo" parameterType="java.lang.Integer" resultType="com.wjianwu.qs.entity.Account">
         SELECT
-            COUNT(*)
+        account_id,account,username,
+        user_sex,user_birth,user_email,user_integral,user_level,
+        header_image,location,status,create_time,update_time
         FROM
-            qs_account
+        qs_account
         WHERE
-            account = #{account}
+        account_id = #{accountId}
     </select>
 
 </mapper>

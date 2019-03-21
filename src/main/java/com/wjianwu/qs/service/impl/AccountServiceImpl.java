@@ -19,6 +19,11 @@ public class AccountServiceImpl implements AccountService {
     private AccountDao accountDao;
 
     @Override
+    public boolean checkAccount(String account) {
+        return accountDao.manyAccount(account) > 0;
+    }
+
+    @Override
     public void addAccount(String account, String username, String password) {
 
         Account accountEntity = new Account();
@@ -32,7 +37,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public boolean checkAccount(String account) {
-        return accountDao.manyAccount(account) > 0;
+    public Account queryAccountInfo(Integer accountId) {
+        return accountDao.selectAccountInfo(accountId);
     }
 }
