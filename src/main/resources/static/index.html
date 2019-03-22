@@ -237,7 +237,7 @@
     </ul>
 </nav>
 
-<!-- Left Sidebar -->
+<!-- 左侧栏 -->
 <aside id="leftsidebar" class="sidebar">
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -261,11 +261,11 @@
                         <div class="user-info">
                             <div class="image">
                                 <a href="profile/profile.html">
-                                    <img id="header-image" v-bind:src="account.headerImage" alt="User">
+                                    <img v-bind:src="account.headerImage" alt="User">
                                 </a>
                             </div>
                             <div class="detail">
-                                <h4 id="username">{{account.username}}</h4>
+                                <h4>{{account.username}}</h4>
                                 <small>Software Designer</small>
                             </div>
                         </div>
@@ -321,13 +321,15 @@
                     <li>
                         <div class="user-info m-b-20 p-b-15">
                             <div class="image">
-                                <a href="profile/profile.html"><img src="assets/images/profile_av.jpg" alt="User"></a>
+                                <a href="profile/profile.html">
+                                    <img v-bind:src="account.headerImage" alt="User">
+                                </a>
                             </div>
                             <div class="detail">
-                                <h4>NoFunk</h4>
+                                <h4>{{account.username}}</h4>
                                 <small>Software Designer</small>
                             </div>
-                            <p class="text-muted">个新签名</p>
+                            <p class="text-muted">{{account.userIntro}}</p>
                             <div class="row">
                                 <div class="col-4">
                                     <h5 class="m-b-5">852</h5>
@@ -386,7 +388,7 @@
     </div>
 </aside>
 
-<!-- Right Sidebar -->
+<!-- 右侧栏 -->
 <aside id="rightsidebar" class="right-sidebar">
     <ul class="nav nav-tabs">
         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#setting"><i
@@ -808,7 +810,7 @@
     </div>
 </aside>
 
-<!-- Chat-launcher -->
+<!-- 上侧和下侧聊天框 -->
 <div class="chat-launcher"></div>
 <div class="chat-wrapper">
     <div class="card">

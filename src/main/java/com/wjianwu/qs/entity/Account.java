@@ -19,18 +19,19 @@ public class Account implements Serializable {
 
     @TableId(value = "account_id", type = IdType.AUTO)
     private Integer accountId;
-    private String account;
-    private String username;
-    private String password;
-    private String pwdSalt;
-    private Integer userSex;
-    private LocalDate userBirth;
-    private String userEmail;
-    private Integer userIntegral;
-    private Integer userLevel;
-    private String headerImage;
-    private String location;
-    private Integer status;
+    private String account;     // 账号
+    private String username;    // 用户名
+    private String password;    // 密码
+    private String pwdSalt;     // 加密
+    private String userIntro;   // 签名
+    private Integer userSex;    // 性别
+    private LocalDate userBirth;    // 生日
+    private String userEmail;       // 邮件
+    private Integer userIntegral;   // 用户积分
+    private Integer userLevel;      // 用户等级
+    private String headerImage;     // 用户头像
+    private String location;        // 所在地
+    private Integer status;         // 状态 0：封禁 1：正常
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
 
@@ -72,6 +73,14 @@ public class Account implements Serializable {
 
     public void setPwdSalt(String pwdSalt) {
         this.pwdSalt = pwdSalt;
+    }
+
+    public String getUserIntro() {
+        return userIntro;
+    }
+
+    public void setUserIntro(String userIntro) {
+        this.userIntro = userIntro;
     }
 
     public Integer getUserSex() {
