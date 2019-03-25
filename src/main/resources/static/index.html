@@ -286,7 +286,7 @@
                             <span>个人</span>
                         </a>
                         <ul class="ml-menu">
-                            <li><a href="index2.html">推送文章</a></li>
+                            <li><a href="profile/upload-article.html">推送文章</a></li>
                             <li><a href="other/ec-dashboard.html">发布动态</a></li>
                             <li><a href="other/blog-dashboard.html">我的收藏</a></li>
                             <li><a href="other/blog-dashboard.html">我的关注</a></li>
@@ -1022,7 +1022,7 @@
                 <p>本周排行</p>
                 <div class="card weather2">
                     <div class="city-selected body g-bg-blush2">
-
+                        <div id="root"></div>
                     </div>
                 </div>
             </div>
@@ -1096,7 +1096,7 @@
         },
         methods: {
             info: function () {
-                $.get("/account/info/" + getUrlParam("accountId"), function (r) {
+                $.get("/account/info", function (r) {
                     left.account = r["account"];
                     left.account["headerImage"] = "upload/" + left.account["headerImage"];
                 });
@@ -1104,16 +1104,6 @@
         }
     });
     left.info();
-
-    function getUrlParam(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) {
-            return unescape(r[2]);
-        } else {
-            return null;
-        }
-    }
 </script>
 </body>
 </html>

@@ -108,14 +108,14 @@ public class AccountController {
     /**
      * 获取用户信息
      *
-     * @param accountId accountId
      * @return code
      */
-    @RequestMapping("/info/{accountId}")
-    public R queryInfo(@PathVariable("accountId") Integer accountId) {
+    @RequestMapping("/info")
+    public R queryInfo() {
 
         try {
-            Account account = accountService.queryAccountInfo(accountId);
+            Subject subject = SecurityUtils.getSubject();
+            Account account = (Account) subject.getPrincipal();
             return R.ok().put("account", account);
         } catch (Exception e) {
             return R.error();

@@ -40,15 +40,4 @@
             account = #{account}
     </select>
 
-    <select id="selectAccountInfo" parameterType="java.lang.Integer" resultType="com.wjianwu.qs.entity.Account">
-        SELECT
-        account_id,account,username,user_intro,
-        user_sex,user_birth,user_email,user_integral,user_level,
-        header_image,location,status,create_time,update_time
-        FROM
-        qs_account
-        WHERE
-        account_id = #{accountId}
-    </select>
-
 </mapper>

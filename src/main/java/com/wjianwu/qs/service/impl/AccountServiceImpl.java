@@ -36,8 +36,4 @@ public class AccountServiceImpl implements AccountService {
 
     }
 
-    @Override
-    public Account queryAccountInfo(Integer accountId) {
-        return accountDao.selectAccountInfo(accountId);
-    }
 }
