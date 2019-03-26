@@ -12,6 +12,8 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/color_skins.css">
+
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
 </head>
 <body class="theme-purple">
 <!-- Page Loader -->
@@ -33,7 +35,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="bars"></a>
                 <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.svg" width="30" alt="Oreo"><span
-                        class="m-l-10">Oreo</span></a>
+                        class="m-l-10">青山社区</span></a>
             </div>
         </li>
         <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a>
@@ -280,8 +282,8 @@
                             <span>个人</span>
                         </a>
                         <ul class="ml-menu">
-                            <li class="active"><a href="upload-article.html">推送文章</a></li>
-                            <li><a href="">发布动态</a></li>
+                            <li class="active"><a href="push-article.html">推送文章</a></li>
+                            <li><a href="push-dynamics.html">发布动态</a></li>
                             <li><a href="">我的收藏</a></li>
                             <li><a href="">我的关注</a></li>
                         </ul>
@@ -841,79 +843,83 @@
     <div class="block-header">
         <div class="row">
             <div class="col-lg-7 col-md-6 col-sm-12">
-                <h2>Editors
+                <h2>丰富自己的累积
                     <small>Welcome to Oreo</small>
                 </h2>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">
                 <ul class="breadcrumb float-md-right">
-                    <li class="breadcrumb-item"><a href="../index.html"><i class="zmdi zmdi-home"></i> Oreo</a></li>
-                    <li class="breadcrumb-item"><a href="javascript:void(0);">Forms</a></li>
-                    <li class="breadcrumb-item active">Editors</li>
+                    <li class="breadcrumb-item"><a href="../index.html"><i class="zmdi zmdi-home"></i> QS</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">个人</a></li>
+                    <li class="breadcrumb-item active">发表文章</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <!-- CKEditor -->
+    <div class="container-fluid" id="article">
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="card">
                     <div class="header">
-                        <h2><strong>CKEditor</strong>
-                            <small>CKEditor is a ready-for-use HTML text editor designed to simplify web content
-                                creation. Taken from <a href="http://ckeditor.com/" target="_blank">ckeditor.com</a>
-                            </small>
+                        <h2>
+                            <strong>新建文章</strong>
                         </h2>
-                        <ul class="header-dropdown">
-                            <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle"
-                                                    data-toggle="dropdown" role="button" aria-haspopup="true"
-                                                    aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="javascript:void(0);">Action</a></li>
-                                    <li><a href="javascript:void(0);">Another action</a></li>
-                                    <li><a href="javascript:void(0);">Something else</a></li>
-                                </ul>
-                            </li>
-                            <li class="remove">
-                                <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                            </li>
-                        </ul>
                     </div>
                     <div class="body">
-                        <textarea id="ckeditor">
-                                <h2>WYSIWYG Editor</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper sapien non nisl facilisis bibendum in quis tellus. Duis in urna bibendum turpis pretium fringilla. Aenean neque velit, porta eget mattis ac, imperdiet quis nisi. Donec non dui et tortor vulputate luctus. Praesent consequat rhoncus velit, ut molestie arcu venenatis sodales.</p>
-                                <h3>Lacinia</h3>
-                                <ul>
-                                    <li>Suspendisse tincidunt urna ut velit ullamcorper fermentum.</li>
-                                    <li>Nullam mattis sodales lacus, in gravida sem auctor at.</li>
-                                    <li>Praesent non lacinia mi.</li>
-                                    <li>Mauris a ante neque.</li>
-                                    <li>Aenean ut magna lobortis nunc feugiat sagittis.</li>
-                                </ul>
-                                <h3>Pellentesque adipiscing</h3>
-                                <p>Maecenas quis ante ante. Nunc adipiscing rhoncus rutrum. Pellentesque adipiscing urna mi, ut tempus lacus ultrices ac. Pellentesque sodales, libero et mollis interdum, dui odio vestibulum dolor, eu pellentesque nisl nibh quis nunc. Sed porttitor leo adipiscing venenatis vehicula. Aenean quis viverra enim. Praesent porttitor ut ipsum id ornare.</p>
-                            </textarea>
+                        <h2 class="card-inside-title">标题</h2>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" title="标题" v-model.trim="article.articleTitle"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="javascript:void(0);"
+                                   class="btn btn-info waves-effect waves-deep-purple btn-sm" @click="publish">发布</a>
+                                <a href="javascript:void(0);"
+                                   class="btn btn-primary waves-effect waves-deep-purple btn-sm" @click="save">保存</a>
+                                <button class="btn btn-raised btn-primary waves-effect btn-round" data-type="success">CLICK ME</button>
+                            </div>
+                        </div>
+                        <h2 class="card-inside-title">副标题</h2>
+                        <div class="row clearfix">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <textarea rows="2" class="form-control no-resize"
+                                                  v-model.trim="article.articleTitleDetail"
+                                                  placeholder="Please type what you want...">
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card-inside-title">正文</h2>
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <textarea class="layui-textarea" id="article-content" title="文章的正文"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- #END# CKEditor -->
     </div>
 </section>
 <!-- Jquery Core Js -->
-<!-- Lib Scripts Plugin Js -->
-<script src="../assets/bundles/libscripts.bundle.js"></script>
-<!-- Lib Scripts Plugin Js -->
-<script src="../assets/bundles/vendorscripts.bundle.js"></script>
-<!-- Ckeditor -->
-<script src="../assets/plugins/ckeditor/ckeditor.js"></script>
+<script src="../assets/bundles/libscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
+<script src="../assets/bundles/vendorscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
 
+<script src="../assets/plugins/ckeditor/ckeditor.js"></script><!-- Ckeditor -->
 <script src="../assets/bundles/mainscripts.bundle.js"></script>
-<!-- Custom Js -->
-<script src="../assets/js/pages/forms/editors.js"></script>
+
+<script src="../assets/js/pages/forms/editors.js"></script><!-- Custom Js -->
 <script src="../assets/lib/vue.min.js"></script>
+<script src="../assets/layui/layui.js"></script>
 
 <script>
     var left = new Vue({
@@ -921,7 +927,7 @@
         data: {
             account: {
                 username: "YourName",
-                headerImage: "assets/images/profile_av.jpg"
+                headerImage: "../assets/images/profile_av.jpg"
             }
         },
         methods: {
@@ -934,6 +940,42 @@
         }
     });
     left.info();
+    layui.use('layedit', function () {
+        var layedit = layui.layedit;
+        var index = layedit.build('article-content'); //建立编辑器
+        article.article.articleContent = layedit.getContent(index);
+    });
+    var article = new Vue({
+        el: '#article',
+        data: {
+            article: {
+                articleTitle: "",
+                articleTitleDetail: "",
+                articleContent: ""
+            }
+        },
+        methods: {
+            save: function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/article/save",
+                    data: JSON.stringify(vm.article),
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.code === 0) {
+                            location.href = "../index.html";
+                        } else {
+                            alert("保存失败！")
+                        }
+                    }
+                })
+            },
+            publish: function () {
+
+            }
+        }
+    });
 </script>
 </body>
 </html>
