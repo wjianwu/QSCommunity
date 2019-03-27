@@ -9,6 +9,8 @@
     <title>:: QS Community ::</title>
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css"/>
     <!-- Custom Css -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/color_skins.css">
@@ -44,7 +46,6 @@
         </li>
         <li class="hidden-md-down"><a href="../other/mail-inbox.html" title="Inbox"><i class="zmdi zmdi-email"></i></a>
         </li>
-        <li><a href="../other/contact.html" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>
         <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i
                 class="zmdi zmdi-notifications"></i>
             <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
@@ -870,15 +871,15 @@
                         <div class="row clearfix">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" title="标题" v-model.trim="article.articleTitle"/>
+                                    <input type="text" class="form-control" title="标题"
+                                           v-model.trim="article.articleTitle"/>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <a href="javascript:void(0);"
-                                   class="btn btn-info waves-effect waves-deep-purple btn-sm" @click="publish">发布</a>
+                                   class="btn btn-info waves-effect waves-deep-purple btn-sm">发布</a>
                                 <a href="javascript:void(0);"
-                                   class="btn btn-primary waves-effect waves-deep-purple btn-sm" @click="save">保存</a>
-                                <button class="btn btn-raised btn-primary waves-effect btn-round" data-type="success">CLICK ME</button>
+                                   class="btn btn-primary waves-effect waves-deep-purple btn-sm" id="save">保存</a>
                             </div>
                         </div>
                         <h2 class="card-inside-title">副标题</h2>
@@ -911,13 +912,14 @@
     </div>
 </section>
 <!-- Jquery Core Js -->
+
 <script src="../assets/bundles/libscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
 <script src="../assets/bundles/vendorscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
 
-<script src="../assets/plugins/ckeditor/ckeditor.js"></script><!-- Ckeditor -->
+<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
+
 <script src="../assets/bundles/mainscripts.bundle.js"></script>
 
-<script src="../assets/js/pages/forms/editors.js"></script><!-- Custom Js -->
 <script src="../assets/lib/vue.min.js"></script>
 <script src="../assets/layui/layui.js"></script>
 
@@ -941,9 +943,32 @@
     });
     left.info();
     layui.use('layedit', function () {
-        var layedit = layui.layedit;
-        var index = layedit.build('article-content'); //建立编辑器
-        article.article.articleContent = layedit.getContent(index);
+        var layedit = layui.layedit,
+            $ = layui.jquery;
+        var index = layedit.build('article-content');
+        //编辑器外部操作
+        var active = {
+            content: function () {
+                return layedit.getContent(index);
+            }
+        };
+        $('#save').on('click', function () {
+            article.article.articleContent = active.content.call(this);
+            $.ajax({
+                type: "POST",
+                url: "/article/save",
+                data: JSON.stringify(article.article),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.code === 0) {
+                        swal("已保存为草稿", "save ok", "success");
+                    } else {
+                        alert("保存失败！")
+                    }
+                }
+            })
+        });
     });
     var article = new Vue({
         el: '#article',
@@ -954,27 +979,7 @@
                 articleContent: ""
             }
         },
-        methods: {
-            save: function () {
-                $.ajax({
-                    type: "POST",
-                    url: "/article/save",
-                    data: JSON.stringify(vm.article),
-                    dataType: "json",
-                    contentType: "application/json; charset=utf-8",
-                    success: function (data) {
-                        if (data.code === 0) {
-                            location.href = "../index.html";
-                        } else {
-                            alert("保存失败！")
-                        }
-                    }
-                })
-            },
-            publish: function () {
-
-            }
-        }
+        methods: {}
     });
 </script>
 </body>

@@ -13,4 +13,5 @@ public interface ArticleService {
 
     List<Article> queryAllArticle(Map map);
 
+    void saveArticle(Article article);
 }

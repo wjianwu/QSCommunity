@@ -1,11 +1,15 @@
 package com.wjianwu.qs.service.impl;
 
 import com.wjianwu.qs.dao.ArticleDao;
+import com.wjianwu.qs.entity.Account;
 import com.wjianwu.qs.entity.Article;
 import com.wjianwu.qs.service.ArticleService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
@@ -22,5 +26,17 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public List<Article> queryAllArticle(Map map) {
         return articleDao.selectAllArticle(map);
+    }
+
+    @Override
+    public void saveArticle(Article article) {
+        Subject subject = SecurityUtils.getSubject();
+        Account account = (Account) subject.getPrincipal();
+        article.setCreateTime(LocalDateTime.now());
+        article.setUpdateTime(LocalDateTime.now());
+        article.setAccountId(account.getAccountId());
+        // 保存草稿 状态为 0
+        article.setStatus(0);
+        articleDao.insert(article);
     }
 }

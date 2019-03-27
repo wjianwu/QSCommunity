@@ -12,6 +12,4 @@ public interface AccountDao extends BaseMapper<Account> {
     int manyAccount(String account);
 
     Account selectByAccount(String account);
-
-    Account selectAccountInfo(Integer accountId);
 }

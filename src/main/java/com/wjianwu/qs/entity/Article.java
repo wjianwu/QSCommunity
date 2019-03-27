@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
 
@@ -17,22 +18,22 @@ public class Article implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "article_id", type = IdType.AUTO)
-    private Integer articleId;
-    private Integer accountId;
+    private Integer articleId;      // 文章ID
+    private Integer accountId;      // 用户ID
     @TableField(exist = false)
-    private String username;
-    private Integer moduleId;
+    private String username;        // 用户名
+    private Integer moduleId;       // 所属分类
     @TableField(exist = false)
-    private String headerImage;
-    private String articleTitle;
-    private String articleTitleDetail;
-    private String articleContent;
-    private Integer likeCount;
-    private Integer commentCount;
-    private Integer collectionCount;
-    private Integer status;
-    private LocalDateTime createTime;
-    private LocalDateTime updateTime;
+    private String headerImage;     // 头像地址
+    private String articleTitle;        // 文章标题
+    private String articleTitleDetail;  // 文章描述
+    private String articleContent;      // 正文内容
+    private Integer likeCount;          // 点赞数
+    private Integer commentCount;       // 被评论数
+    private Integer collectionCount;    // 被收藏数
+    private Integer status;             // 0：草稿 1：已推送
+    private LocalDateTime createTime;   // 创建的时间
+    private LocalDateTime updateTime;   // 最近修改的时间
 
     public Integer getArticleId() {
         return articleId;

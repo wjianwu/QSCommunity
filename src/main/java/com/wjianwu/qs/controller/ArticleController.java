@@ -31,5 +31,15 @@ public class ArticleController {
             return R.error();
         }
     }
+
+    @RequestMapping("/save")
+    public R saveArticle(@RequestBody Article article) {
+        try {
+            articleService.saveArticle(article);
+            return R.ok();
+        } catch (Exception e) {
+            return R.error();
+        }
+    }
 }
 
