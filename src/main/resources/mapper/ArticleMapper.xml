@@ -28,8 +28,11 @@
         ON
         ar.account_id = ac.account_id
         <where>
+            <if test="module != null and module != ''">
+                ar.module_id = #{module}
+            </if>
             <if test="type != null and type != ''">
-                ar.module_id = #{type}
+                ar.status = #{type}
             </if>
         </where>
         ORDER BY

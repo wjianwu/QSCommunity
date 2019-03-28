@@ -1047,11 +1047,11 @@
             cards: []
         },
         methods: {
-            query: function (type) {
+            query: function (module) {
                 $.ajax({
                     type: "POST",
                     url: "/article/list",
-                    data: JSON.stringify({"page": 1, "limit": 10, "type": type}),
+                    data: JSON.stringify({"page": 1, "limit": 10, "module": module}),
                     dataType: "json",
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {

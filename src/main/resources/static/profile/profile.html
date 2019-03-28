@@ -1226,7 +1226,7 @@
                             </div>
                         </div>
                         <template v-for="card in cards">
-                            <div class="card show-click">
+                            <div class="card show-click" v-if="content.type == 1">
                                 <div class="header">
                                     <h2>{{card["articleTitle"]}}</h2>
                                     <ul class="header-dropdown">
@@ -1262,7 +1262,7 @@
                             </div>
                         </div>
                         <template v-for="card in cards">
-                            <div class="card show-click">
+                            <div class="card show-click" v-if="content.type == 0">
                                 <div class="header">
                                     <h2>{{card["articleTitle"]}}</h2>
                                     <ul class="header-dropdown">
@@ -1441,14 +1441,24 @@
                 headerImage: "../assets/images/profile_av.jpg",
                 userIntro: ""
             },
+            type: null,
             cards: []
         },
         methods: {
-            query: function (type) {
+            query: function () {
+                if ($("#myArticle").hasClass("active")) {
+                    content.type = 1;
+                }
+                if ($("#myArticleSave").hasClass("active")) {
+                    content.type = 0;
+                }
+                if (content.type == null) {
+                    return;
+                }
                 $.ajax({
                     type: "POST",
                     url: "/article/list",
-                    data: JSON.stringify({"page": 1, "limit": 10, "type": type}),
+                    data: JSON.stringify({"page": 1, "limit": 10, "type": content.type}),
                     dataType: "json",
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {
