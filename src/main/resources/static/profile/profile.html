@@ -309,7 +309,7 @@
                             <span>其他</span>
                         </a>
                         <ul class="ml-menu">
-                            <li><a href="../product/ec-product.html">周边商城</a></li>
+                            <li><a href="../product/product.html">周边商城</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1163,8 +1163,12 @@
                 <div class="card">
                     <ul class="nav nav-tabs">
                         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#myPost">我的动态</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#myArticle">我的文章</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#myArticleSave">我的草稿</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#myArticle" @click="query(1)">我的文章</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#myArticleSave" @click="query(0)">我的草稿</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#timeline">时间线</a></li>
                     </ul>
                 </div>
@@ -1226,7 +1230,7 @@
                             </div>
                         </div>
                         <template v-for="card in cards">
-                            <div class="card show-click" v-if="content.type == 1">
+                            <div class="card show-click">
                                 <div class="header">
                                     <h2>{{card["articleTitle"]}}</h2>
                                     <ul class="header-dropdown">
@@ -1262,7 +1266,7 @@
                             </div>
                         </div>
                         <template v-for="card in cards">
-                            <div class="card show-click" v-if="content.type == 0">
+                            <div class="card show-click">
                                 <div class="header">
                                     <h2>{{card["articleTitle"]}}</h2>
                                     <ul class="header-dropdown">
@@ -1441,24 +1445,14 @@
                 headerImage: "../assets/images/profile_av.jpg",
                 userIntro: ""
             },
-            type: null,
             cards: []
         },
         methods: {
-            query: function () {
-                if ($("#myArticle").hasClass("active")) {
-                    content.type = 1;
-                }
-                if ($("#myArticleSave").hasClass("active")) {
-                    content.type = 0;
-                }
-                if (content.type == null) {
-                    return;
-                }
+            query: function (type) {
                 $.ajax({
                     type: "POST",
                     url: "/article/list",
-                    data: JSON.stringify({"page": 1, "limit": 10, "type": content.type}),
+                    data: JSON.stringify({"page": 1, "limit": 10, "type": type}),
                     dataType: "json",
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {
