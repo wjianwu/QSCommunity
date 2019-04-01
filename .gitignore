@@ -1,7 +1,6 @@
 *.dll
-.idea/
-target/
+.idea/**
+target/**
 *.class
 .war
 .jar
-target/
