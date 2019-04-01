@@ -1,6 +1,5 @@
-*.dll
 .idea/**
-target/**
 *.class
+target/**
 .war
-.jar
+.gitignore
