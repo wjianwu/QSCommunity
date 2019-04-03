@@ -784,7 +784,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#product_3">
+                                        <a class="nav-link" data-toggle="tab" href="#product_3">
                                             <img v-bind:src="product.pictureTwo"/>
                                         </a>
                                     </li>
@@ -826,12 +826,17 @@
                                     <span class="color bg-green"></span>
                                     <span class="color bg-blue"></span>
                                 </h5>
+                                <div class="action">
+                                    <div class="float-left" style="line-height: 35px">限购：</div>
+                                    <input type="text" class="col-lg-1 form-control text-center" readonly="readonly" value="1" title="">
+                                </div>
                                 <hr>
                                 <div class="action">
-                                    <button class="btn btn-primary btn-round waves-effect" type="button">add to cart
+                                    <button class="btn btn-success btn-round waves-effect" type="button">
+                                        轻松购
                                     </button>
-                                    <button class="btn btn-primary btn-icon btn-icon-mini btn-round waves-effect"
-                                            type="button"><span class="zmdi zmdi-favorite"></span>
+                                    <button class="btn btn-primary btn-round waves-effect" type="button" @click="save">
+                                        加入购物车
                                     </button>
                                 </div>
                             </div>
@@ -842,10 +847,10 @@
             <div class="col-lg-12">
                 <div class="card">
                     <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#description">Description</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#description">参数配置</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#review">Review</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#review">评论</a></li>
                     </ul>
                 </div>
                 <div class="card">
@@ -908,15 +913,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-pane" id="about">
-                                <h6>Where does it come from?</h6>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
-                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-                                    going through the cites of the word in classical literature, discovered the
-                                    undoubtable source.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -968,7 +964,25 @@
                     success: function (data) {
                         if (data.code === 0) {
                             product.product = data["product"];
-                            product.product["picture"] = "../upload/product/" + product.product["picture"]
+                            product.product["picture"] = "../upload/product/" + product.product["picture"];
+                            product.product["pictureOne"] = "../upload/product/" + product.product["pictureOne"];
+                            product.product["pictureTwo"] = "../upload/product/" + product.product["pictureTwo"];
+                            product.product["pictureThree"] = "../upload/product/" + product.product["pictureThree"];
+                        }
+                    }
+                });
+            },
+            save: function () {
+                var productId = getUrlParam("productId");
+                $.ajax({
+                    type: "POST",
+                    url: "/productTrolley/save",
+                    dataType: "json",
+                    data: JSON.stringify({"productId": productId}),
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.code === 0) {
+
                         }
                     }
                 });
