@@ -28,9 +28,9 @@ public class ProductController {
      * @return articleList
      */
     @RequestMapping("/list")
-    public R showAllProduct() {
+    public R showAllProduct(@RequestBody Map params) {
         try {
-            List<Product> articleList = productService.queryAllProduct();
+            List<Product> articleList = productService.queryAllProduct(params);
             return R.ok().put("products", articleList);
         } catch (Exception e) {
             return R.error();

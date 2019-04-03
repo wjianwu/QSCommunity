@@ -21,6 +21,8 @@
             *
         FROM
             qs_product
+        WHERE
+            product_name LIKE CONCAT('%',#{productName},'%')
     </select>
 
 </mapper>

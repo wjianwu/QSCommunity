@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wjianwu
@@ -24,7 +25,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> queryAllProduct() {
-        return productDao.selectAllProduct();
+    public List<Product> queryAllProduct(Map params) {
+        String productName = (String) params.get("productName");
+        return productDao.selectAllProduct(productName);
     }
 }

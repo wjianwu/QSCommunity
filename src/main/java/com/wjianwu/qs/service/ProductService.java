@@ -3,6 +3,7 @@ package com.wjianwu.qs.service;
 import com.wjianwu.qs.entity.Product;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wjianwu
@@ -12,5 +13,5 @@ public interface ProductService {
 
     Product queryProductDetail(int productId);
 
-    List<Product> queryAllProduct();
+    List<Product> queryAllProduct(Map params);
 }

@@ -22,6 +22,9 @@ public class Product implements Serializable {
     private Integer price;
     private Integer storage;
     private String picture;
+    private String pictureOne;
+    private String pictureTwo;
+    private String pictureThree;
     private Integer productLike;
     private String description;
     private String size;
@@ -66,6 +69,30 @@ public class Product implements Serializable {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public String getPictureOne() {
+        return pictureOne;
+    }
+
+    public void setPictureOne(String pictureOne) {
+        this.pictureOne = pictureOne;
+    }
+
+    public String getPictureTwo() {
+        return pictureTwo;
+    }
+
+    public void setPictureTwo(String pictureTwo) {
+        this.pictureTwo = pictureTwo;
+    }
+
+    public String getPictureThree() {
+        return pictureThree;
+    }
+
+    public void setPictureThree(String pictureThree) {
+        this.pictureThree = pictureThree;
     }
 
     public Integer getProductLike() {

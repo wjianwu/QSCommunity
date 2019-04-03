@@ -1,7 +1,7 @@
 package com.wjianwu.qs.dao;
 
-import com.wjianwu.qs.entity.Product;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.wjianwu.qs.entity.Product;
 
 import java.util.List;
 
@@ -11,5 +11,5 @@ import java.util.List;
  */
 public interface ProductDao extends BaseMapper<Product> {
 
-    List<Product> selectAllProduct();
+    List<Product> selectAllProduct(String productName);
 }
