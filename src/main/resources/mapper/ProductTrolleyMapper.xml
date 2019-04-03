@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjianwu.qs.dao.ProductTrolleyDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wjianwu.qs.entity.ProductTrolley">
+        <id column="trolley_id" property="trolleyId"/>
+        <result column="account_id" property="accountId"/>
+        <result column="product_id" property="productId"/>
+        <result column="price" property="price"/>
+        <result column="number" property="number"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <select id="selectProductTrolley" resultType="java.util.Map">
+        SELECT
+        pt.*,p.*
+        FROM
+        qs_product_trollery AS pt
+        LEFT JOIN
+        qs_product AS p
+        ON
+        pt.product_id = p.product_id
+        WHERE
+        pt.account_id = #{accountId}
+        ORDER BY
+        pt.create_time
+        DESC
+    </select>
+</mapper>

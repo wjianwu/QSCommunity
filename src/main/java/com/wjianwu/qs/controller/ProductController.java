@@ -1,14 +1,11 @@
 package com.wjianwu.qs.controller;
 
 import com.wjianwu.qs.common.R;
-import com.wjianwu.qs.entity.Article;
 import com.wjianwu.qs.entity.Product;
 import com.wjianwu.qs.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -25,6 +22,11 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    /**
+     * 展示商品列表
+     *
+     * @return articleList
+     */
     @RequestMapping("/list")
     public R showAllProduct() {
         try {
@@ -35,6 +37,12 @@ public class ProductController {
         }
     }
 
+    /**
+     * 展现商品详情
+     *
+     * @param map productId
+     * @return product
+     */
     @RequestMapping("/info")
     public R showProductDetail(@RequestBody Map map) {
         try {

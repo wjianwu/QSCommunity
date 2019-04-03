@@ -3,65 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="488d4fa7-b103-499d-bfc4-82d2c249dd6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/basic-form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/basic-form-elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/blog-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/blog-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/chartjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/collapse.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/collapse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/colors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/dashboard-rtl.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/dashboard-rtl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ec-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ec-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/editable-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/editable-table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/file-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/file-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/flot.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/flot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/footable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/footable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-validation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/form-wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/form-wizard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/google.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/image-gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/image-gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/invoices.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/invoices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/jquery-datatable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/jquery-datatable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/jquery-knob.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/jquery-knob.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/jvectormap.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/jvectormap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/list-group.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/list-group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/mail-inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/mail-inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/media-object.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/media-object.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/modals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/morris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/normal-tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/normal-tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/progressbars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/progressbars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/range-sliders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/range-sliders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/search-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/search-results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/sortable-nestable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/sortable-nestable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/sparkline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/sparkline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/table-color.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/table-color.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/ui_kit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/ui_kit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/waves.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/waves.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/widgets-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/widgets-app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/widgets-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/widgets-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/other/yandex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/other/yandex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/product/ec-product-List.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/product/product-List.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/product/ec-product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/product/product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/product/ec-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/product/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/profile/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/profile/push-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/profile/push-article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/profile/push-dynamics.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/profile/push-dynamics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -133,15 +75,15 @@
     <session id="1576775930">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.2" value="12" />
+          <entry key="project.open.time.2" value="13" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.3" value="7" />
+          <entry key="project.open.time.3" value="8" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -150,7 +92,7 @@
           <entry key="css" value="36" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="109" />
-          <entry key="java" value="85" />
+          <entry key="java" value="132" />
           <entry key="jpg" value="5" />
           <entry key="js" value="35" />
           <entry key="json" value="1" />
@@ -159,7 +101,7 @@
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
           <entry key="vue" value="1" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="17" />
           <entry key="yml" value="10" />
         </counts>
       </usages-collector>
@@ -169,43 +111,131 @@
           <entry key="CSS" value="36" />
           <entry key="HTML" value="110" />
           <entry key="Image" value="6" />
-          <entry key="JAVA" value="85" />
+          <entry key="JAVA" value="132" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="35" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RNG Compact" value="1" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="17" />
           <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="63" />
-          <entry key="dummy" value="4" />
-          <entry key="html" value="7581" />
-          <entry key="java" value="2117" />
+          <entry key="dummy" value="10" />
+          <entry key="html" value="7582" />
+          <entry key="java" value="3302" />
           <entry key="js" value="4" />
-          <entry key="xml" value="678" />
+          <entry key="xml" value="832" />
           <entry key="yml" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="63" />
-          <entry key="HTML" value="7581" />
-          <entry key="JAVA" value="2117" />
+          <entry key="HTML" value="7582" />
+          <entry key="JAVA" value="3302" />
           <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="SQL" value="60" />
-          <entry key="XML" value="618" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="SQL" value="69" />
+          <entry key="XML" value="763" />
           <entry key="YAML" value="206" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductTrolleyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-49">
+              <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/ProductTrolley.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ProductTrolleyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ProductTrolleyServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductTrolleyMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="40" column="22" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="40" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductTrolleyDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="21" column="30" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -258,20 +288,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/static/other/alerts.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/other/blank.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/other/basic-form-elements.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/other/blog-dashboard.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/ecommerce.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/pages/index.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/R.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ArticleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ArticleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ArticleDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/other/file-dashboard.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Article.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/custom/index.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Account.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/error/404.html" />
@@ -293,22 +309,36 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/other/dialogs.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/other/notifications.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/profile/push-article.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/product/ec-product-List.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/profile/profile.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/product/ec-product-detail.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/static/product/ec-product.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/product/product.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Product.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/static/product/product-detail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/profile/push-article.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductTrolleyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/ProductTrolley.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductTrolleyMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductTrolleyDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ProductTrolleyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ProductTrolleyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductTrolleyController.java" />
       </list>
     </option>
   </component>
@@ -363,7 +393,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,6 +425,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="qs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qs" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
@@ -491,7 +529,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSCommunity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QSCommunity" type="b2602c69:ProjectViewProjectNode" />
@@ -507,6 +563,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,7 +575,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553757190271" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554262843017" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -538,8 +595,8 @@
       <recent name="com.wjianwu.qs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitProjects\QSCommunity\src\main\resources\static\upload\product" />
       <recent name="D:\GitProjects\QSCommunity\src\main\java\com\wjianwu\qs\controller" />
+      <recent name="D:\GitProjects\QSCommunity\src\main\resources\mapper" />
       <recent name="D:\GitProjects\QSCommunity\src\main\java\com\wjianwu\qs\dao" />
       <recent name="D:\GitProjects\QSCommunity\src\main\java\com\wjianwu\qs\service\impl" />
       <recent name="D:\GitProjects\QSCommunity\src\main\java\com\wjianwu\qs\service" />
@@ -557,7 +614,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.QsApplication">
+  <component name="RunManager" selected="Application.GenUtils">
     <configuration name="GenUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wjianwu.qs.common.GenUtils" />
       <module name="QSCommunity" />
@@ -637,11 +694,13 @@
       <workItem from="1553683842419" duration="5387000" />
       <workItem from="1553736050667" duration="2576000" />
       <workItem from="1553742841012" duration="7381000" />
+      <workItem from="1554171438926" duration="1220000" />
+      <workItem from="1554258089859" duration="4075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168999000" />
+    <option name="totallyTimeSpent" value="174553000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,9 +712,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -666,7 +726,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26100966" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39957035" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.25349087" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -811,80 +871,6 @@ File upload = new File(path.getAbsolutePath(),&quot;static/upload_image/&quot;);
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/react/browser.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/custom/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/profile/push-dynamics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
-          <caret line="844" column="46" lean-forward="true" selection-start-line="844" selection-start-column="46" selection-end-line="844" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/external/laydate.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/external/layui.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/lay/layui.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/lay/layui.all.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/external/code.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/laydate.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/lib/lay/layedit.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/auth/sign-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3330">
-          <caret line="111" column="18" selection-start-line="96" selection-start-column="16" selection-end-line="111" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/advanced-form-elements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13080">
-          <caret line="1282" column="41" selection-start-line="1278" selection-start-column="32" selection-end-line="1282" selection-end-column="41" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/other/waves.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8100">
-          <caret line="949" column="188" selection-start-line="949" selection-start-column="90" selection-end-line="949" selection-end-column="188" />
-          <folding>
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ArticleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="117" column="44" lean-forward="true" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/shiro/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -974,20 +960,6 @@ File upload = new File(path.getAbsolutePath(),&quot;static/upload_image/&quot;);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/profile/push-article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="961" column="7" selection-start-line="961" selection-start-column="7" selection-end-line="961" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -995,107 +967,8 @@ File upload = new File(path.getAbsolutePath(),&quot;static/upload_image/&quot;);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/profile/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="1416" lean-forward="true" selection-start-line="1416" selection-end-line="1416" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#template#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#template#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#template#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/images/ecommerce/15.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="965" column="56" lean-forward="true" selection-start-line="965" selection-start-column="56" selection-end-line="965" selection-end-column="56" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#ul#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#3;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#11;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1104,59 +977,10 @@ File upload = new File(path.getAbsolutePath(),&quot;static/upload_image/&quot;);
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ArticleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="48" />
-          <folding>
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/product/product-List.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
           <caret line="308" column="28" lean-forward="true" selection-start-line="308" selection-start-column="28" selection-end-line="308" selection-end-column="28" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/product/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-979">
-          <caret line="878" column="77" selection-start-line="878" selection-start-column="77" selection-end-line="878" selection-end-column="77" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#60244#60393#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,51 +998,237 @@ File upload = new File(path.getAbsolutePath(),&quot;static/upload_image/&quot;);
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/product/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20190">
+          <caret line="850" column="19" selection-start-line="850" selection-start-column="19" selection-end-line="850" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6540">
+          <caret line="224" column="80" selection-start-line="224" selection-start-column="80" selection-end-line="224" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3990">
+          <caret line="854" column="47" selection-start-line="854" selection-start-column="47" selection-end-line="854" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/product/product-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/profile/push-article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="924" lean-forward="true" selection-start-line="924" selection-end-line="924" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3060">
+          <caret line="117" column="44" lean-forward="true" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ArticleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="49" column="57" lean-forward="true" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/GenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="630">
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding>
             <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="240">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="34" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/common/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        <state relative-caret-position="750">
+          <caret line="40" column="22" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="40" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/product/product-detail.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="60" column="46" lean-forward="true" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        <state relative-caret-position="335">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="30" />
           <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#57171#57808#0" />
-            <element signature="e#58571#58815#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductTrolleyMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/dao/ProductTrolleyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/impl/ProductTrolleyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/service/ProductTrolleyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/entity/ProductTrolley.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjianwu/qs/controller/ProductTrolleyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
         </state>
       </provider>
     </entry>
