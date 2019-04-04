@@ -47,7 +47,7 @@ public class ProductTrolleyController {
     @RequestMapping("/save")
     public R ProductTrolleySave(@RequestBody Map map) {
         try {
-            int productId = Integer.parseInt((String) map.get("productId"));
+            int productId = (Integer) map.get("productId");
 
             if (productTrolleyService.querySingleProduct(productId) != 0) {
                 return R.error(100, "物品已在购物车了哦！");

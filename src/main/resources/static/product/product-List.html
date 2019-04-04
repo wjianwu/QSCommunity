@@ -868,40 +868,32 @@
                         <table class="table table-hover m-b-0">
                             <thead>
                             <tr>
-                                <th>Image</th>
-                                <th>Product Name</th>
-                                <th data-breakpoints="sm xs">Detail</th>
-                                <th data-breakpoints="xs">Amount</th>
-                                <th data-breakpoints="xs md">Stock</th>
-                                <th data-breakpoints="sm xs md">Action</th>
+                                <!--<th></th>-->
+                                <th>商品图片</th>
+                                <th>商品名称</th>
+                                <th>大小</th>
+                                <th>颜色</th>
+                                <th>库存</th>
+                                <th>价格</th>
+                                <th class="text-md-center">Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td><img src="../assets/images/ecommerce/1.png" width="48" alt="Product img"></td>
-                                <td><h5>Simple Black Clock</h5></td>
-                                <td><span class="text-muted">randomised words even slightly believable</span></td>
-                                <td>$16.00</td>
-                                <td><span class="col-green">In Stock</span></td>
-                                <td>
-                                    <a href="javascript:void(0);"
-                                       class="btn btn-default waves-effect waves-float waves-green">
-                                        <i class="zmdi zmdi-edit"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                       class="btn btn-default waves-effect waves-float waves-red">
-                                        <i class="zmdi zmdi-delete"></i>
-                                    </a>
-                                </td>
-                            </tr>
                             <template v-for="product in products">
                                 <tr>
+                                    <!--<td>-->
+                                    <!--<div class="checkbox">-->
+                                    <!--<input type="checkbox" v-bind:id="product.product_id">-->
+                                    <!--<label v-bind:for="product.product_id"></label>-->
+                                    <!--</div>-->
+                                    <!--</td>-->
                                     <td><img v-bind:src="product.picture" width="48" alt="商品图片"></td>
                                     <td><h5>{{product.product_name}}</h5></td>
-                                    <td><span class="text-muted">randomised words even slightly believable</span></td>
+                                    <td><span class="text-muted">XL</span></td>
+                                    <td>{{product.color}}</td>
+                                    <td>${{product.storage}}</td>
                                     <td>${{product.price}}</td>
-                                    <td><span class="col-green">In Stock</span></td>
-                                    <td>
+                                    <td class="text-md-center">
                                         <a href="javascript:void(0);"
                                            class="btn btn-default waves-effect waves-float waves-green">
                                             <i class="zmdi zmdi-edit"></i>

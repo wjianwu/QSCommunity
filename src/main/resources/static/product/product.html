@@ -10,6 +10,7 @@
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!-- Favicon-->
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css"/>
     <!-- Custom Css -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/ecommerce.css">
@@ -774,11 +775,11 @@
                                     <img v-bind:src="product.picture" alt="Product" class="img-fluid"/>
                                 </a>
                                 <div class="hover">
-                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect">
-                                        <i class="zmdi zmdi-plus"></i>
+                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect"
+                                       @click="eval(save(product.productId))"><i class="zmdi zmdi-plus"></i>
                                     </a>
-                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect">
-                                        <i class="zmdi zmdi-shopping-cart"></i>
+                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect"
+                                       @click="eval(save(product.productId))"><i class="zmdi zmdi-shopping-cart"></i>
                                     </a>
                                 </div>
                             </div>
@@ -799,6 +800,7 @@
 
 <script src="../assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
 <script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
 
 <script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 
@@ -845,10 +847,29 @@
                         }
                     }
                 });
+            },
+            save: function (productId) {
+                $.ajax({
+                    type: "POST",
+                    url: "/productTrolley/save",
+                    dataType: "json",
+                    data: JSON.stringify({"productId": productId}),
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.code === 0) {
+                            swal("已放入您的购物车", "save ok", "success");
+                        } else if (data.code === 100) {
+                            swal(data.msg);
+                        } else {
+                            swal("添加失败");
+                        }
+                    }
+                });
             }
         }
     });
     product.query();
+
     $("#search").keydown(function () {
         if (event.keyCode === 13) {
             product.query($("#search").val());

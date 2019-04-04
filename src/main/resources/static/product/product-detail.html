@@ -798,8 +798,8 @@
                                 </ul>
                             </div>
                             <div class="details col-lg-8 col-md-12">
-                                <h3 class="product-title m-b-0">{{product.productName}}</h3>
-                                <h4 class="price m-t-0">当前售价: <span class="col-amber">${{product.price}}</span></h4>
+                                <h4 class="product-title m-b-0">当前商品：{{product.productName}}</h4>
+                                <h4 class="price m-t-0">当前售价：<span class="col-amber">${{product.price}}</span></h4>
                                 <div class="rating">
                                     <div class="stars">
                                         <span class="zmdi zmdi-star col-amber"></span>
@@ -811,22 +811,41 @@
                                     <span class="m-l-10">41 reviews</span>
                                 </div>
                                 <hr>
-                                <p class="product-description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                    since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book.</p>
-                                <p class="vote"><strong>78%</strong> of buyers enjoyed this product! <strong>(23
-                                    votes)</strong></p>
-                                <h5 class="sizes">sizes:
-                                    <span class="size" title="small">s</span>
-                                    <span class="size" title="medium">m</span>
-                                    <span class="size" title="large">l</span>
-                                    <span class="size" title="xtra large">xl</span>
-                                </h5>
-                                <h5 class="colors">colors:
+                                <p class="product-description">{{product.description}}</p>
+                                <p class="vote">
+                                    <strong>78%</strong> of buyers enjoyed this product!
+                                    <strong>(23 votes)</strong>
+                                </p>
+                                <!--<h5 class="sizes">sizes:-->
+                                <!--<span class="size" title="small">s</span>-->
+                                <!--<span class="size" title="medium">m</span>-->
+                                <!--<span class="size" title="large">l</span>-->
+                                <!--<span class="size" title="xtra large">xl</span>-->
+                                <!--</h5>-->
+                                <div class="form-group">
+                                    <div class="radio inlineblock m-r-20">
+                                        <input type="radio" name="gender" id="S" class="with-gap" value="option1" checked="checked">
+                                        <label for="S">S</label>
+                                    </div>
+                                    <div class="radio inlineblock m-r-20">
+                                        <input type="radio" name="gender" id="M" class="with-gap" value="option2">
+                                        <label for="M">M</label>
+                                    </div>
+                                    <div class="radio inlineblock m-r-20">
+                                        <input type="radio" name="gender" id="L" class="with-gap" value="option3">
+                                        <label for="L">L</label>
+                                    </div>
+                                    <div class="radio inlineblock m-r-20">
+                                        <input type="radio" name="gender" id="XL" class="with-gap" value="option4">
+                                        <label for="XL">XL</label>
+                                    </div>
+                                </div>
+
+                                <h5 class="colors">
+                                    colors:
                                     <span class="color bg-amber not-available" title="Not In store"></span>
-                                    <span class="color bg-green"></span>
-                                    <span class="color bg-blue"></span>
+                                    <span class="color bg-green not-available"></span>
+                                    <span class="color bg-blue not-available"></span>
                                 </h5>
                                 <div class="action">
                                     <div class="float-left" style="line-height: 35px">限购：</div>
@@ -982,7 +1001,7 @@
                     type: "POST",
                     url: "/productTrolley/save",
                     dataType: "json",
-                    data: JSON.stringify({"productId": productId}),
+                    data: JSON.stringify({"productId": Number(productId)}),
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {
                         if (data.code === 0) {
@@ -994,7 +1013,7 @@
                         }
                     }
                 });
-            }
+            },
         }
     });
     product.info();
