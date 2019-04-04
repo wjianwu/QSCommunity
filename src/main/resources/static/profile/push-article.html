@@ -283,10 +283,9 @@
                             <span>个人</span>
                         </a>
                         <ul class="ml-menu">
-                            <li class="active"><a href="push-article.html">推送文章</a></li>
-                            <li><a href="push-dynamics.html">发布动态</a></li>
-                            <li><a href="">我的收藏</a></li>
-                            <li><a href="">我的关注</a></li>
+                            <li><a href="../profile/push-article.html">撰写文章</a></li>
+                            <li><a href="#">发布动态</a></li>
+                            <li><a href="#">我的草稿</a></li>
                         </ul>
                     </li>
                     <li class="open">
@@ -295,9 +294,8 @@
                             <span>管理</span>
                         </a>
                         <ul class="ml-menu">
-                            <li><a href="">修改密码</a></li>
-                            <li><a href="">修改信息</a></li>
-                            <li><a href="">修改文章</a></li>
+                            <li><a href="../other/blog-dashboard.html">我的收藏</a></li>
+                            <li><a href="../other/blog-dashboard.html">我的关注</a></li>
                         </ul>
                     </li>
                     <li class="open">
@@ -955,6 +953,12 @@
         };
         $('#save').on('click', function () {
             article.article.articleContent = active.content.call(this);
+            if (article.article.articleTitle === "" ||
+                article.article.articleTitleDetail === "" ||
+                article.article.articleContent === "") {
+                swal("请补充完信息！");
+                return;
+            }
             $.ajax({
                 type: "POST",
                 url: "/article/save",
