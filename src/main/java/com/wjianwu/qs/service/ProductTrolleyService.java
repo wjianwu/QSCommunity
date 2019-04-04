@@ -9,7 +9,9 @@ import java.util.Map;
  */
 public interface ProductTrolleyService {
 
-    void saveProductTrolley(int productId, int number);
+    void saveProductTrolley(int productId);
+
+    int querySingleProduct(int productId);
 
     List<Map> queryProductTrolley();
 

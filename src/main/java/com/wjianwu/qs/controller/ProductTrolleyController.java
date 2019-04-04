@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Map;
@@ -15,7 +16,7 @@ import java.util.Map;
  * @author wjianwu
  * @since 2019-04-03
  */
-@Controller
+@RestController
 @RequestMapping("/productTrolley")
 public class ProductTrolleyController {
 
@@ -47,8 +48,12 @@ public class ProductTrolleyController {
     public R ProductTrolleySave(@RequestBody Map map) {
         try {
             int productId = Integer.parseInt((String) map.get("productId"));
-            int number = (Integer) map.get("number");
-            productTrolleyService.saveProductTrolley(productId, number);
+
+            if (productTrolleyService.querySingleProduct(productId) != 0) {
+                return R.error(100, "物品已在购物车了哦！");
+            }
+
+            productTrolleyService.saveProductTrolley(productId);
             return R.ok();
         } catch (Exception e) {
             return R.error();

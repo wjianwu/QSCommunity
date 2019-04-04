@@ -7,16 +7,16 @@
         <id column="trolley_id" property="trolleyId"/>
         <result column="account_id" property="accountId"/>
         <result column="product_id" property="productId"/>
-        <result column="price" property="price"/>
         <result column="number" property="number"/>
         <result column="create_time" property="createTime"/>
     </resultMap>
 
     <select id="selectProductTrolley" resultType="java.util.Map">
         SELECT
-        pt.*,p.*
+        pt.trolley_id,pt.account_id,pt.product_id,pt.number,pt.create_time,
+        p.product_name,p.storage,p.picture,p.size,p.color,p.price
         FROM
-        qs_product_trollery AS pt
+        qs_product_trolley AS pt
         LEFT JOIN
         qs_product AS p
         ON
@@ -26,5 +26,16 @@
         ORDER BY
         pt.create_time
         DESC
+    </select>
+
+    <select id="selectSingleProduct" resultType="java.lang.Integer">
+        SELECT
+        COUNT(*)
+        FROM
+        qs_product_trolley
+        WHERE
+        account_id = #{accountId}
+        AND
+        product_id = #{productId}
     </select>
 </mapper>

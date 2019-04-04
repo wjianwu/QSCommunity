@@ -23,15 +23,22 @@ public class ProductTrolleyServiceImpl implements ProductTrolleyService {
     private ProductTrolleyDao productTrolleyDao;
 
     @Override
-    public void saveProductTrolley(int productId, int number) {
+    public void saveProductTrolley(int productId) {
         Account account = CommonUtil.getAccount();
 
         ProductTrolley productTrolley = new ProductTrolley();
         productTrolley.setProductId(productId);
         productTrolley.setAccountId(account.getAccountId());
-        productTrolley.setNumber(number);
+        productTrolley.setNumber(1);
         productTrolley.setCreateTime(LocalDateTime.now());
         productTrolleyDao.insert(productTrolley);
+    }
+
+    @Override
+    public int querySingleProduct(int productId) {
+        Account account = CommonUtil.getAccount();
+
+        return productTrolleyDao.selectSingleProduct(account.getAccountId(), productId);
     }
 
     @Override

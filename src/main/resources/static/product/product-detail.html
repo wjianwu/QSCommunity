@@ -11,6 +11,7 @@
     <!-- Favicon-->
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Custom Css -->
+    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css"/>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/ecommerce.css">
     <link rel="stylesheet" href="../assets/css/color_skins.css">
@@ -199,6 +200,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li class="active"><a href="product.html">周边商城</a></li>
+                            <li><a href="product-List.html">购物列表</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -828,7 +830,8 @@
                                 </h5>
                                 <div class="action">
                                     <div class="float-left" style="line-height: 35px">限购：</div>
-                                    <input type="text" class="col-lg-1 form-control text-center" readonly="readonly" value="1" title="">
+                                    <input type="text" class="col-lg-1 form-control text-center" readonly="readonly"
+                                           value="1" title="">
                                 </div>
                                 <hr>
                                 <div class="action">
@@ -923,6 +926,7 @@
 <!-- Jquery Core Js -->
 <script src="../assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
 <script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
 
 <script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 
@@ -982,7 +986,11 @@
                     contentType: "application/json; charset=utf-8",
                     success: function (data) {
                         if (data.code === 0) {
-
+                            swal("已放入您的购物车", "save ok", "success");
+                        } else if (data.code === 100) {
+                            swal(data.msg);
+                        } else {
+                            swal("添加失败");
                         }
                     }
                 });

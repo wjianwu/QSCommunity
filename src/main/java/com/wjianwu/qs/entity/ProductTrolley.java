@@ -20,7 +20,6 @@ public class ProductTrolley implements Serializable {
     private Integer trolleyId;  // 主键ID
     private Integer accountId;  // 所属ID
     private Integer productId;  // 商品ID
-    private Double price;       // 单价
     private Integer number;     // 数量
     private LocalDateTime createTime;   // 创建时间
 
@@ -46,14 +45,6 @@ public class ProductTrolley implements Serializable {
 
     public void setProductId(Integer productId) {
         this.productId = productId;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
     }
 
     public Integer getNumber() {
