@@ -147,7 +147,7 @@
                     <li>
                         <div class="user-info">
                             <div class="image">
-                                <a href="profile/profile.html">
+                                <a href="article/profile.html">
                                     <img v-bind:src="account.headerImage" alt="User">
                                 </a>
                             </div>
@@ -173,7 +173,7 @@
                             <span>个人</span>
                         </a>
                         <ul class="ml-menu">
-                            <li><a href="profile/push-article.html">撰写文章</a></li>
+                            <li><a href="article/push-article.html">撰写文章</a></li>
                             <li><a href="#">发布动态</a></li>
                             <li><a href="#">我的草稿</a></li>
                         </ul>
@@ -207,7 +207,7 @@
                     <li>
                         <div class="user-info m-b-20 p-b-15">
                             <div class="image">
-                                <a href="profile/profile.html">
+                                <a href="article/profile.html">
                                     <img v-bind:src="account.headerImage" alt="User">
                                 </a>
                             </div>
@@ -850,36 +850,39 @@
                 <div class="row clearfix">
                     <div class="col-lg-12">
                         <template v-for="card in cards">
-                            <div class="card show-click" style="color: #424242;">
-                                <div class="header">
-                                    <h2>角色</h2>
-                                    <ul class="header-dropdown">
-                                        <li class="remove">{{card["createTime"]}}</li>
-                                    </ul>
-                                </div>
-                                <div class="body" style="padding-top: 0">
-                                    <div class="media mleft">
-                                        <div class="media-left">
-                                            <a href="javascript:void(0);">
-                                                <img class="media-object" v-bind:src="card['headerImage']" width="64"
-                                                     height="64" style="border-radius: 20%">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="media-heading">{{card["articleTitle"]}}</div>
-                                            <div style="font-size: 13px">
-                                                {{card["articleTitleDetail"]}}
+                            <a v-bind:href="card.linkHref">
+                                <div class="card show-click" style="color: #424242;">
+                                    <div class="header">
+                                        <h2>角色</h2>
+                                        <ul class="header-dropdown">
+                                            <li class="remove">{{card["createTime"]}}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="body" style="padding-top: 0">
+                                        <div class="media mleft">
+                                            <div class="media-left">
+                                                <a href="javascript:void(0);">
+                                                    <img class="media-object" v-bind:src="card['headerImage']"
+                                                         width="64"
+                                                         height="64" style="border-radius: 20%">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">{{card["articleTitle"]}}</div>
+                                                <div style="font-size: 13px">
+                                                    {{card["articleTitleDetail"]}}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    作者：{{card["username"]}}
-                                    <div style="float: right;padding-bottom: 10px">
-                                        <i class="zmdi zmdi-eye col-amber"></i>&emsp;520
-                                        &emsp;<i class="zmdi zmdi-comment-text col-red"></i>&emsp;{{card["commentCount"]}}
-                                        &emsp;<i class="zmdi zmdi-thumb-up col-blue"></i>&emsp;{{card["likeCount"]}}
+                                        作者：{{card["username"]}}
+                                        <div style="float: right;padding-bottom: 10px">
+                                            <i class="zmdi zmdi-eye col-amber"></i>&emsp;520
+                                            &emsp;<i class="zmdi zmdi-comment-text col-red"></i>&emsp;{{card["commentCount"]}}
+                                            &emsp;<i class="zmdi zmdi-thumb-up col-blue"></i>&emsp;{{card["likeCount"]}}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </template>
                     </div>
                 </div>
@@ -950,7 +953,8 @@
                         if (data.code === 0) {
                             content.cards = data["articles"];
                             for (var i = 0; i < content.cards.length; i++) {
-                                content.cards[i]["headerImage"] = "upload/" + content.cards[i]["headerImage"]
+                                content.cards[i]["headerImage"] = "upload/" + content.cards[i]["headerImage"];
+                                content.cards[i]["linkHref"] = "article/article-detail.html?articleId=" + content.cards[i]["articleId"];
                             }
                         }
                     }

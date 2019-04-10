@@ -10244,7 +10244,7 @@
         var mode = isConcurrent ? ConcurrentMode | StrictMode : NoContext;
 
         if (enableProfilerTimer && isDevToolsPresent) {
-            // Always collect profile timings when DevTools are present.
+            // Always collect article timings when DevTools are present.
             // This enables DevTools to start capturing timing at any point–
             // Without some nodes in the tree having empty base times.
             mode |= ProfileMode;

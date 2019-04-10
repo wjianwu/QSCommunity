@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js " lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
@@ -6,21 +6,20 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
 
-    <title>青山社区-周边商城</title>
+    <title>青山社区-文章详情</title>
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!-- Favicon-->
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css"/>
-    <!-- Custom Css -->
+    <!-- 自定义 Css -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/ecommerce.css">
+    <link rel="stylesheet" href="../assets/css/timeline.css">
     <link rel="stylesheet" href="../assets/css/color_skins.css">
 </head>
-<body class="theme-purple">
-<!-- Page Loader -->
+<body class="theme-purple ls-toggle-menu">
+<!-- 提示 加载器 -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img class="zmdi-hc-spin" src="../assets/images/logo.svg" width="48" height="48" alt="QS">
+        <div class="m-t-30"><img class="zmdi-hc-spin" src="../assets/images/logo.svg" width="48" height="48" alt="Oreo">
         </div>
         <p>Please wait...</p>
     </div>
@@ -29,7 +28,7 @@
 <!-- Overlay For Sidebars -->
 <div class="overlay"></div>
 
-<!-- 置顶 -->
+<!-- 置顶工具栏 -->
 <nav class="navbar p-l-5 p-r-5">
     <ul class="nav navbar-nav navbar-left">
         <li>
@@ -47,9 +46,7 @@
         <li class="dropdown">
             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                 <i class="zmdi zmdi-notifications"></i>
-                <div class="notify">
-                    <span class="heartbit"></span><span class="point"></span>
-                </div>
+                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
             </a>
             <ul class="dropdown-menu pullDown">
                 <li class="body">
@@ -114,21 +111,11 @@
                 <li class="footer"><a href="javascript:void(0);">View All</a></li>
             </ul>
         </li>
-        <li class="hidden-sm-down">
-            <div class="input-group">
-                <input id="search" type="text" class="form-control" placeholder="Search...">
-                <span class="input-group-addon">
-                    <i class="zmdi zmdi-search"></i>
-                </span>
-            </div>
-        </li>
         <li class="float-right">
             <a href="javascript:void(0);" class="fullscreen hidden-sm-down" data-provide="fullscreen" data-close="true">
                 <i class="zmdi zmdi-fullscreen"></i>
             </a>
-            <a href="../auth/sign-in.html" class="mega-menu" data-close="true">
-                <i class="zmdi zmdi-power"></i>
-            </a>
+            <a href="../auth/sign-in.html" class="mega-menu" data-close="true"><i class="zmdi zmdi-power"></i></a>
             <a href="javascript:void(0);" class="js-right-sidebar" data-close="true">
                 <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
             </a>
@@ -136,7 +123,7 @@
     </ul>
 </nav>
 
-<!-- 左侧 -->
+<!-- 左侧栏 -->
 <aside id="leftsidebar" class="sidebar">
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -159,7 +146,7 @@
                     <li>
                         <div class="user-info">
                             <div class="image">
-                                <a href="../article/profile.html">
+                                <a href="profile.html">
                                     <img v-bind:src="account.headerImage" alt="User">
                                 </a>
                             </div>
@@ -179,13 +166,13 @@
                             <li><a href="">交际广场</a></li>
                         </ul>
                     </li>
-                    <li class="open">
+                    <li class="active open">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="zmdi zmdi-folder-person"></i>
                             <span>个人</span>
                         </a>
                         <ul class="ml-menu">
-                            <li><a href="../article/push-article.html">撰写文章</a></li>
+                            <li><a href="push-article.html">撰写文章</a></li>
                             <li><a href="#">发布动态</a></li>
                             <li><a href="#">我的草稿</a></li>
                         </ul>
@@ -200,14 +187,14 @@
                             <li><a href="../other/blog-dashboard.html">我的关注</a></li>
                         </ul>
                     </li>
-                    <li class="active open">
+                    <li class="open">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="zmdi zmdi-shopping-cart"></i>
                             <span>其他</span>
                         </a>
                         <ul class="ml-menu">
-                            <li class="active"><a href="product.html">周边商城</a></li>
-                            <li><a href="product-List.html">购物列表</a></li>
+                            <li><a href="../product/product.html">周边商城</a></li>
+                            <li><a href="../product/product-List.html">购物列表</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -219,7 +206,7 @@
                     <li>
                         <div class="user-info m-b-20 p-b-15">
                             <div class="image">
-                                <a href="../article/profile.html">
+                                <a href="profile.html">
                                     <img v-bind:src="account.headerImage" alt="User">
                                 </a>
                             </div>
@@ -577,7 +564,7 @@
         <div class="tab-pane slideLeft" id="activity">
             <div class="slim_scroll">
                 <div class="card user_activity">
-                    <h6>Recent Activity</h6>
+                    <h6>最近活跃</h6>
                     <div class="streamline b-accent">
                         <div class="sl-item">
                             <img class="user rounded-circle" src="../assets/images/xs/avatar4.jpg" alt="">
@@ -676,7 +663,7 @@
     </div>
 </aside>
 
-<!-- 上聊 -->
+<!-- Chat-launcher -->
 <div class="chat-launcher"></div>
 <div class="chat-wrapper">
     <div class="card">
@@ -745,64 +732,79 @@
     </div>
 </div>
 
-<section class="content ecommerce-page">
+<section class="content profile-page">
     <div class="block-header">
         <div class="row">
             <div class="col-lg-7 col-md-6 col-sm-12">
-                <h2>商品列表
-                    <small>Welcome to QS-Community</small>
+                <h2>文章详情
+                    <small>Welcome to QS Community</small>
                 </h2>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">
+                <button class="btn btn-white btn-icon btn-round hidden-sm-down float-right m-l-10" type="button">
+                    <i class="zmdi zmdi-plus"></i>
+                </button>
                 <ul class="breadcrumb float-md-right">
                     <li class="breadcrumb-item"><a href="../index.html"><i class="zmdi zmdi-home"></i> QS</a></li>
-                    <li class="breadcrumb-item"><a href="../product/product.html">商品</a></li>
-                    <li class="breadcrumb-item active">商品列表</li>
+                    <li class="breadcrumb-item active">文章详情</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="product">
+    <div class="container-fluid" id="content">
         <div class="row clearfix">
-            <template v-for="product in products">
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="card product_item">
-                        <div class="body">
-                            <div class="cp_img">
-                                <a v-bind:href="'product-detail.html?productId=' + product.productId">
-                                    <img v-bind:src="product.picture" alt="Product" class="img-fluid"/>
-                                </a>
-                                <div class="hover">
-                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect"
-                                       @click="eval(save(product.productId))"><i class="zmdi zmdi-plus"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-primary waves-effect"
-                                       @click="eval(save(product.productId))"><i class="zmdi zmdi-shopping-cart"></i>
+            <div class="col-xl-2 col-lg-2 col-md-2"></div>
+            <div class="col-xl-8 col-lg-8 col-md-8">
+                <div class="card profile-header">
+                    <div class="body">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-2">
+                                <div class="profile-image float-md-right" style="width: 100px;height: 100px">
+                                    <a v-bind:href="article.profile">
+                                        <img v-bind:src="article.header_image">
                                     </a>
                                 </div>
                             </div>
-                            <div class="product_details">
-                                <h5><a href="product-detail.html">{{product.productName}}</a></h5>
-                                <ul class="product_price list-unstyled">
-                                    <li class="old_price">${{product.price}}</li>
-                                    <li class="new_price">${{product.price}}</li>
-                                </ul>
+                            <div class="col-lg-10 col-md-10 col-10">
+                                <h3>{{article.article_title}}</h3>
+                                <div class="row" style="margin-left: 3px">
+                                    <a href="javascript:void(0);"
+                                       class="btn btn-primary waves-effect waves-deep-purple btn-sm" id="save">收藏
+                                    </a>
+                                </div>
+                                <div class="row float-right">
+                                    发布时间：2019-04-10&emsp;&emsp;
+                                    <i class="zmdi zmdi-eye col-amber"></i>&emsp;
+                                    520
+                                    &emsp;
+                                    <i class="zmdi zmdi-comment-text col-red"></i>&emsp;
+                                    {{article.comment_count}}
+                                    &emsp;<i class="zmdi zmdi-thumb-up col-blue"></i>&emsp;
+                                    {{article.like_count}}&emsp;&emsp;
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </template>
+                <div class="card profile-header">
+                    <div class="body">
+                        <div v-html="article.article_content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2"></div>
         </div>
     </div>
 </section>
 
-<script src="../assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-<script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
-<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
-
-<script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+<script src="../assets/bundles/libscripts.bundle.js"></script><!-- Jquery Core Js -->
+<script src="../assets/bundles/vendorscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
+<script src="../assets/bundles/knob.bundle.js"></script><!-- Lib Scripts Plugin Js -->
+<script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Jquery Knob Plugin Js -->
+<script src="../assets/js/pages/charts/jquery-knob.js"></script><!-- Custom Js -->
 
 <script src="../assets/lib/vue.min.js"></script>
+
 <script>
     var left = new Vue({
         el: '#info',
@@ -817,62 +819,46 @@
                 $.get("/account/info", function (r) {
                     left.account = r["account"];
                     left.account["headerImage"] = "../upload/" + left.account["headerImage"];
+                    content.account = r["account"];
+                    content.account["headerImage"] = "../upload/" + content.account["headerImage"];
                 });
             }
         }
     });
     left.info();
 
-    var product = new Vue({
-        el: '#product',
+    var content = new Vue({
+        el: '#content',
         data: {
-            products: []
+            article: {}
         },
         methods: {
-            query: function (productName) {
+            detail: function () {
                 $.ajax({
                     type: "POST",
-                    url: "/product/list",
+                    url: "/article/detail/" + content.param("articleId"),
                     dataType: "json",
-                    contentType: "application/json; charset=utf-8",
-                    data: JSON.stringify({"productName": (productName == null ? "" : productName)}),
                     success: function (data) {
                         if (data.code === 0) {
-                            product.products = data["products"];
-                            for (var i = 0; i < product.products.length; i++) {
-                                product.products[i]["picture"] = "../upload/product/" + product.products[i]["picture"]
-                            }
+                            content.article = data.article;
+                            content.article.header_image = "../upload/" + content.article.header_image;
+                            content.article.profile = "other-profile.html?accountId=" + content.article["account_id"];
                         }
                     }
                 });
             },
-            save: function (productId) {
-                $.ajax({
-                    type: "POST",
-                    url: "/productTrolley/save",
-                    dataType: "json",
-                    data: JSON.stringify({"productId": productId}),
-                    contentType: "application/json; charset=utf-8",
-                    success: function (data) {
-                        if (data.code === 0) {
-                            swal("已放入您的购物车", "save ok", "success");
-                        } else if (data.code === 100) {
-                            swal(data.msg);
-                        } else {
-                            swal("添加失败");
-                        }
-                    }
-                });
+            param: function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return unescape(r[2]);
+                } else {
+                    return null;
+                }
             }
         }
     });
-    product.query();
-
-    $("#search").keydown(function () {
-        if (event.keyCode === 13) {
-            product.query($("#search").val());
-        }
-    })
+    content.detail();
 </script>
 </body>
 </html>

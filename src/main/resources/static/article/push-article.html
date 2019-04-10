@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js " lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
@@ -9,9 +9,13 @@
     <title>:: QS Community ::</title>
     <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css"/>
     <!-- Custom Css -->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/color_skins.css">
+
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
 </head>
 <body class="theme-purple">
 <!-- Page Loader -->
@@ -42,7 +46,6 @@
         </li>
         <li class="hidden-md-down"><a href="../other/mail-inbox.html" title="Inbox"><i class="zmdi zmdi-email"></i></a>
         </li>
-        <li><a href="../other/contact.html" title="Contact List"><i class="zmdi zmdi-account-box-phone"></i></a></li>
         <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i
                 class="zmdi zmdi-notifications"></i>
             <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
@@ -280,8 +283,8 @@
                             <span>个人</span>
                         </a>
                         <ul class="ml-menu">
-                            <li><a href="../profile/push-article.html">撰写文章</a></li>
-                            <li><a href="#">发布动态</a></li>
+                            <li class="active"><a href="/push-article.html">撰写文章</a></li>
+                            <li><a href="/push-dynamics.html">发布动态</a></li>
                             <li><a href="#">我的草稿</a></li>
                         </ul>
                     </li>
@@ -840,8 +843,8 @@
     <div class="block-header">
         <div class="row">
             <div class="col-lg-7 col-md-6 col-sm-12">
-                <h2>展现生活的姿态
-                    <small>Welcome to Oreo</small>
+                <h2>丰富自己的累积
+                    <small>Welcome to QS-Community</small>
                 </h2>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">
@@ -853,8 +856,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <!-- CKEditor -->
+    <div class="container-fluid" id="article">
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="card">
@@ -868,17 +870,26 @@
                         <div class="row clearfix">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" title="标题"/>
+                                    <input type="text" class="form-control" title="标题"
+                                           v-model.trim="article.articleTitle"/>
                                 </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="javascript:void(0);"
+                                   class="btn btn-info waves-effect waves-deep-purple btn-sm">发布</a>
+                                <a href="javascript:void(0);"
+                                   class="btn btn-primary waves-effect waves-deep-purple btn-sm" id="save">保存</a>
                             </div>
                         </div>
                         <h2 class="card-inside-title">副标题</h2>
                         <div class="row clearfix">
-                            <div class="col-sm-12">
+                            <div class="col-sm-8">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <textarea rows="2" class="form-control no-resize"
-                                                  placeholder="Please type what you want..."></textarea>
+                                        <textarea rows="1" class="form-control no-resize"
+                                                  v-model.trim="article.articleTitleDetail"
+                                                  placeholder="Please type what you want...">
+                                        </textarea>
                                     </div>
                                 </div>
                             </div>
@@ -888,8 +899,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <textarea rows="2" class="form-control no-resize"
-                                                  placeholder="Please type what you want..."></textarea>
+                                        <textarea class="layui-textarea" id="article-content" title="文章的正文"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -898,21 +908,19 @@
                 </div>
             </div>
         </div>
-        <!-- #END# CKEditor -->
     </div>
 </section>
 <!-- Jquery Core Js -->
-<!-- Lib Scripts Plugin Js -->
-<script src="../assets/bundles/libscripts.bundle.js"></script>
-<!-- Lib Scripts Plugin Js -->
-<script src="../assets/bundles/vendorscripts.bundle.js"></script>
-<!-- Ckeditor -->
-<script src="../assets/plugins/ckeditor/ckeditor.js"></script>
+
+<script src="../assets/bundles/libscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
+<script src="../assets/bundles/vendorscripts.bundle.js"></script><!-- Lib Scripts Plugin Js -->
+
+<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
 
 <script src="../assets/bundles/mainscripts.bundle.js"></script>
-<!-- Custom Js -->
-<script src="../assets/js/pages/forms/editors.js"></script>
+
 <script src="../assets/lib/vue.min.js"></script>
+<script src="../assets/layui/layui.js"></script>
 
 <script>
     var left = new Vue({
@@ -920,7 +928,7 @@
         data: {
             account: {
                 username: "YourName",
-                headerImage: "assets/images/profile_av.jpg"
+                headerImage: "../assets/images/profile_av.jpg"
             }
         },
         methods: {
@@ -933,6 +941,51 @@
         }
     });
     left.info();
+    layui.use('layedit', function () {
+        var layedit = layui.layedit,
+            $ = layui.jquery;
+        var index = layedit.build('article-content');
+        //编辑器外部操作
+        var active = {
+            content: function () {
+                return layedit.getContent(index);
+            }
+        };
+        $('#save').on('click', function () {
+            article.article.articleContent = active.content.call(this);
+            if (article.article.articleTitle === "" ||
+                article.article.articleTitleDetail === "" ||
+                article.article.articleContent === "") {
+                swal("请补充完信息！");
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/article/save",
+                data: JSON.stringify(article.article),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.code === 0) {
+                        swal("已保存为草稿", "save ok", "success");
+                    } else {
+                        swal("保存失败！")
+                    }
+                }
+            })
+        });
+    });
+    var article = new Vue({
+        el: '#article',
+        data: {
+            article: {
+                articleTitle: "",
+                articleTitleDetail: "",
+                articleContent: ""
+            }
+        },
+        methods: {}
+    });
 </script>
 </body>
 </html>

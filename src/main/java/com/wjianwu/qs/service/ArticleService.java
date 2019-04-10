@@ -11,7 +11,9 @@ import java.util.Map;
  */
 public interface ArticleService {
 
-    List<Article> queryAllArticle(Map map);
-
     void saveArticle(Article article);
+
+    Map queryArticleDetail(int articleId);
+
+    List<Article> queryAllArticle(Map map);
 }

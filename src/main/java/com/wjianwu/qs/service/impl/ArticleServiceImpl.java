@@ -24,11 +24,6 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleDao articleDao;
 
     @Override
-    public List<Article> queryAllArticle(Map map) {
-        return articleDao.selectAllArticle(map);
-    }
-
-    @Override
     public void saveArticle(Article article) {
         Subject subject = SecurityUtils.getSubject();
         Account account = (Account) subject.getPrincipal();
@@ -41,5 +36,15 @@ public class ArticleServiceImpl implements ArticleService {
         article.setCommentCount(0);
         article.setCollectionCount(0);
         articleDao.insert(article);
+    }
+
+    @Override
+    public Map queryArticleDetail(int articleId) {
+        return articleDao.selectArticleDetail(articleId);
+    }
+
+    @Override
+    public List<Article> queryAllArticle(Map map) {
+        return articleDao.selectAllArticle(map);
     }
 }

@@ -4,6 +4,7 @@ import com.wjianwu.qs.common.R;
 import com.wjianwu.qs.entity.Article;
 import com.wjianwu.qs.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,6 +38,15 @@ public class ArticleController {
         try {
             articleService.saveArticle(article);
             return R.ok();
+        } catch (Exception e) {
+            return R.error();
+        }
+    }
+
+    @RequestMapping("/detail/{articleId}")
+    public R showArticleDetail(@PathVariable int articleId) {
+        try {
+            return R.ok().put("article", articleService.queryArticleDetail(articleId));
         } catch (Exception e) {
             return R.error();
         }
