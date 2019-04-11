@@ -35,6 +35,11 @@ public class ProductTrolleyServiceImpl implements ProductTrolleyService {
     }
 
     @Override
+    public void removeProductTrolley(int productId) {
+        productTrolleyDao.deleteByProductId(productId);
+    }
+
+    @Override
     public int querySingleProduct(int productId) {
         Account account = CommonUtil.getAccount();
 

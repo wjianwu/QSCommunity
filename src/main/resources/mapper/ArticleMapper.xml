@@ -51,6 +51,7 @@
         </where>
         ORDER BY
         create_time
+        DESC
         LIMIT #{limit}
     </select>
 </mapper>

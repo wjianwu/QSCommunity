@@ -11,6 +11,8 @@ public interface ProductTrolleyService {
 
     void saveProductTrolley(int productId);
 
+    void removeProductTrolley(int productId);
+
     int querySingleProduct(int productId);
 
     List<Map> queryProductTrolley();

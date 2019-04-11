@@ -30,8 +30,6 @@ public class ArticleServiceImpl implements ArticleService {
         article.setCreateTime(LocalDateTime.now());
         article.setUpdateTime(LocalDateTime.now());
         article.setAccountId(account.getAccountId());
-        // 保存草稿 状态为 0
-        article.setStatus(0);
         article.setLikeCount(0);
         article.setCommentCount(0);
         article.setCollectionCount(0);

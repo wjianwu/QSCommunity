@@ -5,6 +5,7 @@ import com.wjianwu.qs.common.R;
 import com.wjianwu.qs.service.ProductTrolleyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +30,7 @@ public class ProductTrolleyController {
      * @return ok error
      */
     @RequestMapping("/list")
-    public R ProductTrolleyList() {
+    public R productTrolleyList() {
         try {
             List<Map> productTrolleys = productTrolleyService.queryProductTrolley();
             return R.ok().put("productTrolleys", productTrolleys);
@@ -45,7 +46,7 @@ public class ProductTrolleyController {
      * @return ok error
      */
     @RequestMapping("/save")
-    public R ProductTrolleySave(@RequestBody Map map) {
+    public R productTrolleySave(@RequestBody Map map) {
         try {
             int productId = (Integer) map.get("productId");
 
@@ -54,6 +55,22 @@ public class ProductTrolleyController {
             }
 
             productTrolleyService.saveProductTrolley(productId);
+            return R.ok();
+        } catch (Exception e) {
+            return R.error();
+        }
+    }
+
+    /**
+     * 移除购物车
+     *
+     * @param productId productId
+     * @return ok error
+     */
+    @RequestMapping("/remove/{productId}")
+    public R productTrolleyRemove(@PathVariable int productId) {
+        try {
+            productTrolleyService.removeProductTrolley(productId);
             return R.ok();
         } catch (Exception e) {
             return R.error();

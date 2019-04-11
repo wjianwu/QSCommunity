@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/footable-bootstrap/css/footable.bootstrap.min.css">
     <link rel="stylesheet" href="../assets/plugins/footable-bootstrap/css/footable.standalone.min.css">
+    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css"/>
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -754,7 +755,6 @@
                         <table class="table table-hover m-b-0">
                             <thead>
                             <tr>
-                                <!--<th></th>-->
                                 <th>商品图片</th>
                                 <th>商品名称</th>
                                 <th>大小</th>
@@ -767,12 +767,6 @@
                             <tbody>
                             <template v-for="product in products">
                                 <tr>
-                                    <!--<td>-->
-                                    <!--<div class="checkbox">-->
-                                    <!--<input type="checkbox" v-bind:id="product.product_id">-->
-                                    <!--<label v-bind:for="product.product_id"></label>-->
-                                    <!--</div>-->
-                                    <!--</td>-->
                                     <td><img v-bind:src="product.picture" width="48" alt="商品图片"></td>
                                     <td><h5>{{product.product_name}}</h5></td>
                                     <td><span class="text-muted">XL</span></td>
@@ -780,11 +774,11 @@
                                     <td>${{product.storage}}</td>
                                     <td>${{product.price}}</td>
                                     <td class="text-md-center">
-                                        <a href="javascript:void(0);"
-                                           class="btn btn-default waves-effect waves-float waves-green">
-                                            <i class="zmdi zmdi-edit"></i>
-                                        </a>
-                                        <a href="javascript:void(0);"
+                                        <!--<a v-bind:href="product.remove"-->
+                                        <!--class="btn btn-default waves-effect waves-float waves-green">-->
+                                        <!--<i class="zmdi zmdi-edit"></i>-->
+                                        <!--</a>-->
+                                        <a v-bind:href="product.remove"
                                            class="btn btn-default waves-effect waves-float waves-red">
                                             <i class="zmdi zmdi-delete"></i>
                                         </a>
@@ -820,6 +814,7 @@
 <script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
 
 <script src="../assets/bundles/footable.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
 
 <script src="../assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 <script src="../assets/js/pages/tables/footable.js"></script><!-- Custom Js -->
@@ -862,7 +857,23 @@
                             trolley.products = data["productTrolleys"];
                             for (var i = 0; i < trolley.products.length; i++) {
                                 trolley.products[i]["picture"] = "../upload/product/" + trolley.products[i]["picture"];
+                                trolley.products[i]["remove"] = "javascript:trolley.remove(" + trolley.products[i]["product_id"] + ");";
                             }
+                        }
+                    }
+                });
+            },
+            remove: function (productId) {
+                $.ajax({
+                    type: "POST",
+                    url: "/productTrolley/remove/" + productId,
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.code === 0) {
+                            swal("该商品已移出您的购物车", "2秒后刷新...", "success");
+                            setTimeout("reloadCur()", 2000)
+                        } else {
+                            swal("移出失败");
                         }
                     }
                 });
@@ -870,6 +881,10 @@
         }
     });
     trolley.list();
+
+    function reloadCur() {
+        location.reload()
+    }
 </script>
 </body>
 </html>

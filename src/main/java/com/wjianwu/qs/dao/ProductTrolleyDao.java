@@ -13,6 +13,8 @@ import java.util.Map;
  */
 public interface ProductTrolleyDao extends BaseMapper<ProductTrolley> {
 
+    void deleteByProductId(int productId);
+
     int selectSingleProduct(@Param("accountId") int accountId, @Param("productId") int productId);
 
     List<Map> selectProductTrolley(int accountId);
