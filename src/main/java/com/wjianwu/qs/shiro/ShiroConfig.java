@@ -49,14 +49,7 @@ public class ShiroConfig {
 
         Map<String, String> filterMap = new LinkedHashMap<>();
 
-        /* 可访问的静态资源 */
-        filterMap.put("/assets/**", "anon");
-        filterMap.put("/auth/**", "anon");
-        filterMap.put("/error/**", "anon");
-        /* 用户登录注册重置密码接口开放 */
-        filterMap.put("/account/**","anon");
-
-        filterMap.put("/**", "authc");
+        filterMap.put("/**", "anon");
 
         shiroFilter.setFilterChainDefinitionMap(filterMap);
         return shiroFilter;
